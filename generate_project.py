@@ -124,6 +124,11 @@ def main():
         
     if not os.path.exists(projects_dir):
         os.makedirs(projects_dir)
+    else:
+        # Clear old markdown files to prevent duplicates when dates change
+        for f in os.listdir(projects_dir):
+            if f.endswith(".md"):
+                os.remove(os.path.join(projects_dir, f))
 
     # Get all json files in _project_data directory
     json_files = [os.path.join(data_dir, f) for f in os.listdir(data_dir) if f.endswith('.json') and f != 'template.json']
