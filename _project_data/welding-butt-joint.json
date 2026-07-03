@@ -1,0 +1,30 @@
+
+{
+  "project_folder": "arc-welding-butt-joint",
+  "title": "Structural Steel Fusion: Single V Butt Joint",
+  "date": "2026-03-10",
+  "categories": ["manufacturing", "metallurgical-joining"],
+  "tags": ["Arc Welding", "SMAW", "Steel Fabrication"],
+  "overview_metadata": {
+    "project_type": "Practical Laboratory",
+    "duration": "March 2026",
+    "team": "Group 6A6-F",
+    "my_role": "Engineering Student"
+  },
+  "overview": "A metallurgical engineering project demonstrating the creation of a permanent, high-strength fusion joint using Shielded Metal Arc Welding (SMAW).",
+  "problem_statement": "Achieving full-penetration fusion between steel plates without causing warping or slag inclusions in structural connections.",
+  "objectives": [
+    "Execute a structurally sound Single V Butt joint.",
+    "Achieve full root penetration and a continuous weld bead.",
+    "Perform proper edge preparation (30-degree beveling)."
+  ],
+  "engineering_process": "Beveling edges, establishing root gap, tack welding for distortion control, multi-pass welding, and mechanical slag removal.",
+  "technical_details": "5mm Mild Steel Plates; SMAW process; 3.1mm flux-coated electrodes.",
+  "design_decisions": "Applied 30-degree beveling to balance penetration depth against filler consumption.",
+  "tools_and_software": ["SMAW Welding Machine", "Chipping Hammer", "Engineering Protractor"],
+  "engineering_skills_demonstrated": ["SMAW Welding", "Distortion Control", "Metallurgical Prep"],
+  "challenges": "Controlling thermal distortion and ensuring complete slag removal between passes.",
+  "results": "Successful full-penetration V-butt weld with uniform bead profile.",
+  "key_learning": "Mastered arc stability and travel speed coordination for consistent fusion.",
+  "gallery": ["edge-bevel.jpg", "tack-welding.jpg", "finished-weld.jpg"]
+}

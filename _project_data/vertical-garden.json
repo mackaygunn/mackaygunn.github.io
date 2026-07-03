@@ -1,0 +1,30 @@
+
+{
+  "project_folder": "urban-vertical-garden",
+  "title": "Sustainable Vertical Micro-Garden for Urban Housing",
+  "date": "2025-09-12",
+  "categories": ["sustainable-engineering", "urban-design"],
+  "tags": ["Sustainability", "Urban Agriculture", "System Design"],
+  "overview_metadata": {
+    "project_type": "Sustainable Engineering Design",
+    "duration": "September 2025",
+    "team": "5 Members",
+    "my_role": "Lead Decision Analyst"
+  },
+  "overview": "A sustainable urban planning project proposing a scalable rooftop micro-garden system optimized for high-rise residential environments.",
+  "problem_statement": "Lack of space in high-density urban housing restricts access to fresh produce and disconnects residents from sustainable food sources.",
+  "objectives": [
+    "Propose a cost-effective, space-efficient garden layout.",
+    "Use decision matrices to validate design alternatives.",
+    "Develop a localized bill of materials for deployment."
+  ],
+  "engineering_process": "Literature review, development of multi-criteria weighted decision matrix, system design in CAD, and structural weight analysis.",
+  "technical_details": "10m² footprint; Budget: 74,200 LKR; Utilized lightweight organic substrates.",
+  "design_decisions": "Selected Green Rooftop architecture for its high social and environmental impact score.",
+  "tools_and_software": ["SketchUp", "Spreadsheet Analysis", "Decision Matrices"],
+  "engineering_skills_demonstrated": ["Systems Engineering", "Decision Analysis", "Resource Allocation"],
+  "challenges": "Accounting for structural weight limits on existing rooftops.",
+  "results": "Delivered a fully validated, CAD-modeled design proposal within strict budget constraints.",
+  "key_learning": "Learned to convert qualitative sustainability goals into quantitative decision-making parameters.",
+  "gallery": ["roof-layout.jpg", "decision-matrix.jpg", "cad-model.jpg"]
+}

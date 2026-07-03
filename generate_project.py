@@ -17,7 +17,7 @@ def build_markdown(data):
     team = meta.get("team", "")
     role = meta.get("my_role", "")
     
-    cover_image = data.get("cover_image", "cover.jpg")
+    cover_image = "cover.jpg"
     
     # Start building MD
     md = f"""---
@@ -70,8 +70,16 @@ thumbnail: "/assets/images/projects/{folder}/{cover_image}"
                 md += f"{val}\n"
 
     # Gallery
-    cad_gallery = data.get("cad_gallery", [])
     diagrams = data.get("diagrams", [])
+    
+    # Automatically find CAD images
+    cad_gallery = []
+    image_dir = os.path.join('assets', 'images', 'projects', folder)
+    if os.path.exists(image_dir):
+        for f in os.listdir(image_dir):
+            if f.lower().startswith("cad") and f.lower().endswith(('.png', '.jpg', '.jpeg', '.gif', '.webp')):
+                cad_gallery.append(f)
+    cad_gallery.sort()
     
     if cad_gallery or diagrams:
         md += "\n## Gallery\n"
