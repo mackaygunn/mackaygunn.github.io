@@ -54,12 +54,6 @@ I learned how to...
 
 ## Gallery
 
-### CAD Component Geometry
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin-bottom: 15px;">
-  <img src="{{ '/assets/images/projects/my-project-name/cad-1.jpg' | relative_url }}" alt="CAD View" style="width:100%; border-radius: 4px; border: 1px solid #eee;">
-</div>
-*Caption: Orthographic profiles and individual component geometries.*
-
 ### System Integration & Prototyping
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-bottom: 2rem; text-align: center;">
