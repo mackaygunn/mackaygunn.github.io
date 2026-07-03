@@ -1,10 +1,10 @@
 {
   "project_folder": "thermo-electrical-lunchbox",
   "title": "Smart Thermo-Electrical Lunchbox",
-  "date": "2026-07-04",
+  "date": "2026-07-03",
   "categories": [
-    "physical-projects",
-    "product-design"
+    "product-design",
+    "thermodynamics"
   ],
   "tags": [
     "CAD",
@@ -41,5 +41,14 @@
   "challenges": "Balancing heating power requirements with device weight limits.",
   "results": "Prototype achieved 70\u00b0C in 16 minutes with stable thermal cut-off control.",
   "key_learning": "Gained experience in cross-disciplinary integration of electrical loads and mechanical insulation.",
-  "diagrams": []
+  "diagrams": [
+    {
+      "file": "circuit-diagram.jpg",
+      "caption": ""
+    },
+    {
+      "file": "exploded-view.jpg",
+      "caption": ""
+    }
+  ]
 }
