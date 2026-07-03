@@ -6,6 +6,7 @@ categories: [design-simulation, physical-projects]
 tags: [Thermal-Engineering, SketchUp, Arduino, Systems-Design]
 duration: "June - October 2025"
 image: "/ramiruliyanage.github.io/assets/images/projects/lunchbox/cover.jpg"
+thumbnail: "/ramiruliyanage.github.io/assets/images/projects/lunchbox/cover.jpg"
 ---
 
 <img src="/ramiruliyanage.github.io/assets/images/projects/lunchbox/cover.jpg" alt="Project Cover" style="width: 100%; max-width: 500px; display: block; margin: 0 auto 2rem auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
