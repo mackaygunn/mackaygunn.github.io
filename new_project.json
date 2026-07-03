@@ -1,0 +1,41 @@
+{
+  "project_folder": "my-new-project",
+  "title": "Example Project Title",
+  "date": "2025-11-20",
+  "categories": ["design-simulation", "physical-projects"],
+  "tags": ["CAD", "FEA", "Arduino"],
+  
+  "overview_metadata": {
+    "project_type": "Product Design • Engineering",
+    "duration": "June 2025 - August 2025",
+    "team": "4 Members",
+    "my_role": "Lead Engineer"
+  },
+  
+  "overview_text": "A brief 2-3 sentence overview of the project.",
+  "problem_statement": "The problem we were trying to solve...",
+  "objectives": [
+    "Objective 1",
+    "Objective 2",
+    "Objective 3"
+  ],
+  
+  "cover_image": "cover.jpg",
+  
+  "cad_gallery": [
+    "cad-1.jpg",
+    "cad-2.jpg",
+    "cad-3.jpg"
+  ],
+  
+  "diagrams": [
+    {
+      "file": "diagram-1.jpg",
+      "caption": "Exploded view detailing component placement."
+    },
+    {
+      "file": "diagram-2.jpg",
+      "caption": "System architecture diagram."
+    }
+  ]
+}
