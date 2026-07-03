@@ -1,22 +1,10 @@
 import json
 import os
+import glob
 import subprocess
 
-def main():
-    json_path = 'new_project.json'
-    
-    if not os.path.exists(json_path):
-        print(f"Error: {json_path} not found.")
-        return
-        
-    with open(json_path, 'r', encoding='utf-8') as f:
-        try:
-            data = json.load(f)
-        except json.JSONDecodeError as e:
-            print(f"Error parsing JSON: {e}")
-            return
-            
-    # Extract data
+def build_markdown(data):
+    # Extract Data
     folder = data.get("project_folder", "new-project").strip().replace(' ', '-')
     title = data.get("title", "Untitled Project")
     date = data.get("date", "2025-01-01")
@@ -29,14 +17,9 @@ def main():
     team = meta.get("team", "")
     role = meta.get("my_role", "")
     
-    overview_text = data.get("overview_text", "")
-    problem = data.get("problem_statement", "")
-    objectives = data.get("objectives", [])
     cover_image = data.get("cover_image", "cover.jpg")
-    cad_gallery = data.get("cad_gallery", [])
-    diagrams = data.get("diagrams", [])
     
-    # Build Markdown Content
+    # Start building MD
     md = f"""---
 layout: project
 title: "{title}"
@@ -49,23 +32,47 @@ thumbnail: "/assets/images/projects/{folder}/{cover_image}"
 ---
 
 <img src="{{{{ '/assets/images/projects/{folder}/{cover_image}' | relative_url }}}}" alt="Project Cover" style="width: 250px; height: auto; display: block; margin: 0 auto 2rem auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-
-## Overview
-**Project Type:** {p_type}<br>
-**Duration:** {duration}<br>
-**Team:** {team}<br>
-**My Role:** {role}
-
-{overview_text}
-
-## Problem Statement
-{problem}
-
-## Project Objectives
 """
-    for obj in objectives:
-        md += f"* {obj}\n"
-        
+
+    # Overview
+    md += f"\n## Overview\n"
+    if p_type: md += f"**Project Type:** {p_type}<br>\n"
+    if duration: md += f"**Duration:** {duration}<br>\n"
+    if team: md += f"**Team:** {team}<br>\n"
+    if role: md += f"**My Role:** {role}\n\n"
+    
+    overview_text = data.get("overview_text", "")
+    if overview_text:
+        md += f"{overview_text}\n"
+
+    # Dynamic Sections
+    sections = [
+        ("Problem Statement", "problem_statement", False),
+        ("Objectives", "objectives", True),
+        ("Engineering Process", "engineering_process", False),
+        ("Technical Details", "technical_details", False),
+        ("Design Decisions", "design_decisions", False),
+        ("Tools & Software", "tools_and_software", True),
+        ("Engineering Skills Demonstrated", "engineering_skills", True),
+        ("Challenges", "challenges", False),
+        ("Results", "results", False),
+        ("Key Learning", "key_learning", False)
+    ]
+
+    for title_header, key, is_list in sections:
+        val = data.get(key)
+        if val:
+            md += f"\n## {title_header}\n"
+            if is_list and isinstance(val, list):
+                for item in val:
+                    md += f"* {item}\n"
+            else:
+                md += f"{val}\n"
+
+    # Gallery
+    cad_gallery = data.get("cad_gallery", [])
+    diagrams = data.get("diagrams", [])
+    
     if cad_gallery or diagrams:
         md += "\n## Gallery\n"
         
@@ -87,29 +94,56 @@ thumbnail: "/assets/images/projects/{folder}/{cover_image}"
             md += f'    <p style="font-size: 0.85em; color: #666; line-height: 1.4;"><em>{cap}</em></p>\n'
             md += f'  </div>\n'
         md += '</div>\n'
+
+    return md, filename_date_prefix(date, folder)
+
+def filename_date_prefix(date, folder):
+    return f"{date}-{folder}.md"
+
+def main():
+    data_dir = '_project_data'
+    projects_dir = '_projects'
+    
+    if not os.path.exists(data_dir):
+        print(f"Directory {data_dir} not found. Please create it and add JSON files.")
+        return
         
-    # Write to file
-    filename = f"{date}-{folder}.md"
-    projects_dir = "_projects"
     if not os.path.exists(projects_dir):
         os.makedirs(projects_dir)
-        
-    filepath = os.path.join(projects_dir, filename)
+
+    json_files = glob.glob(os.path.join(data_dir, '*.json'))
     
-    with open(filepath, 'w', encoding='utf-8') as f:
-        f.write(md)
-        
-    print(f"Successfully generated markdown file: {filepath}")
+    if not json_files:
+        print(f"No JSON files found in {data_dir}")
+        return
+
+    print(f"Found {len(json_files)} project files. Generating markdown...")
     
-    # Automatically Git Add, Commit, Push
-    print("Pushing to GitHub...")
+    for json_path in json_files:
+        with open(json_path, 'r', encoding='utf-8') as f:
+            try:
+                data = json.load(f)
+                md_content, filename = build_markdown(data)
+                
+                filepath = os.path.join(projects_dir, filename)
+                with open(filepath, 'w', encoding='utf-8') as out_f:
+                    out_f.write(md_content)
+                print(f" -> Generated: {filename}")
+                
+            except json.JSONDecodeError as e:
+                print(f"Error parsing JSON in {json_path}: {e}")
+            except Exception as e:
+                print(f"Error processing {json_path}: {e}")
+
+    # Git Operations
+    print("\nPushing updates to GitHub...")
     try:
         subprocess.run(["git", "add", "."], check=True)
-        subprocess.run(["git", "commit", "-m", f"Auto-publish project: {title}"], check=True)
+        subprocess.run(["git", "commit", "-m", "Auto-publish updated projects database"], check=True)
         subprocess.run(["git", "push"], check=True)
         print("Successfully published to GitHub Pages!")
     except subprocess.CalledProcessError as e:
-        print(f"Error during Git push: {e}")
+        print(f"Git push failed or nothing to commit. {e}")
 
 if __name__ == "__main__":
     main()

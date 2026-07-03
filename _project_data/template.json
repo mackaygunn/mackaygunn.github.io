@@ -1,0 +1,48 @@
+{
+  "project_folder": "my-project-name",
+  "title": "Project Title",
+  "date": "2026-07-03",
+  "categories": ["design-simulation", "physical-projects"],
+  "tags": ["CAD", "FEA", "Arduino"],
+  
+  "overview_metadata": {
+    "project_type": "Product Design",
+    "duration": "June - August 2026",
+    "team": "4 Members",
+    "my_role": "Lead Engineer"
+  },
+  
+  "overview_text": "A brief 2-3 sentence overview of the project.",
+  "problem_statement": "The problem we were trying to solve...",
+  "objectives": [
+    "Objective 1",
+    "Objective 2"
+  ],
+  "engineering_process": "Research -> Design -> Prototyping",
+  "technical_details": "Details about the electronics and mechanics...",
+  "design_decisions": "Why we chose this material...",
+  "tools_and_software": [
+    "SketchUp",
+    "Arduino IDE"
+  ],
+  "engineering_skills": [
+    "Embedded Systems",
+    "Thermal Analysis"
+  ],
+  "challenges": "The main challenge was...",
+  "results": "The prototype successfully...",
+  "key_learning": "I learned how to...",
+  
+  "cover_image": "cover.jpg",
+  
+  "cad_gallery": [
+    "cad-1.jpg"
+  ],
+  
+  "diagrams": [
+    {
+      "file": "diagram-1.jpg",
+      "caption": "Exploded view."
+    }
+  ]
+}
