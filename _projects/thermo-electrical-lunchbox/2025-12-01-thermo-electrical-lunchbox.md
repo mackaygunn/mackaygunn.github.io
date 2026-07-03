@@ -5,11 +5,9 @@ date: 2025-12-01
 categories: [design-simulation, physical-projects]
 tags: [Thermal-Engineering, SketchUp, Arduino, Systems-Design]
 duration: "June - October 2025"
-image: "/ramiruliyanage.github.io/assets/images/projects/lunchbox/cover.jpg"
-thumbnail: "/ramiruliyanage.github.io/assets/images/projects/lunchbox/cover.jpg"
+image: "/assets/images/projects/lunchbox/cover.jpg"
+thumbnail: "/assets/images/projects/lunchbox/cover.jpg"
 ---
-
-<img src="/ramiruliyanage.github.io/assets/images/projects/lunchbox/cover.jpg" alt="Project Cover" style="width: 100%; max-width: 500px; display: block; margin: 0 auto 2rem auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
 
 ## Overview
 **Project Type:** Product Design • Embedded Systems • Thermal Engineering
@@ -72,7 +70,7 @@ The final prototype underwent rigorous functional verification.
 
 ### System Integration & Prototyping
 
-<div style="max-width: 650px; margin: 0 auto; text-align: center;">
+<div style="max-width: 450px; margin: 0 auto; text-align: center;">
   <img src="/ramiruliyanage.github.io/assets/images/projects/lunchbox/exploded-view.jpg" alt="Exploded Diagram" style="width: 100%; border-radius: 6px; border: 1px solid #ddd; margin-bottom: 5px;">
   <p style="font-size: 0.9em; color: #666; margin-bottom: 2rem;"><em>Exploded view detailing component placement and modular architecture.</em></p>
 
