@@ -2,12 +2,18 @@ import json
 import os
 import glob
 import subprocess
+import datetime
 
 def build_markdown(data):
     # Extract Data
     folder = data.get("project_folder", "new-project").strip().replace(' ', '-')
     title = data.get("title", "Untitled Project")
-    date = data.get("date", "2025-01-01")
+    date = data.get("date", "TODAY")
+    
+    if date == "TODAY" or not date:
+        date = datetime.datetime.now().strftime('%Y-%m-%d')
+        data['date'] = date
+
     categories = data.get("categories", [])
     tags = data.get("tags", [])
     
@@ -109,7 +115,7 @@ thumbnail: "/assets/images/projects/{folder}/{cover_image}"
             md += f'  </div>\n'
         md += '</div>\n'
 
-    return md, filename_date_prefix(date, folder)
+    return md, filename_date_prefix(date, folder), data
 
 def filename_date_prefix(date, folder):
     return f"{date}-{folder}.md"
@@ -124,11 +130,6 @@ def main():
         
     if not os.path.exists(projects_dir):
         os.makedirs(projects_dir)
-    else:
-        # Clear old markdown files to prevent duplicates when dates change
-        for f in os.listdir(projects_dir):
-            if f.endswith(".md"):
-                os.remove(os.path.join(projects_dir, f))
 
     # Get all json files in _project_data directory
     json_files = [os.path.join(data_dir, f) for f in os.listdir(data_dir) if f.endswith('.json') and f != 'template.json']
@@ -143,11 +144,23 @@ def main():
         with open(json_path, 'r', encoding='utf-8') as f:
             try:
                 data = json.load(f)
-                md_content, filename = build_markdown(data)
+                md_content, filename, updated_data = build_markdown(data)
+                
+                # Delete any old markdown files for this project to prevent duplicates
+                folder = updated_data.get("project_folder", "")
+                if folder:
+                    old_files = glob.glob(os.path.join(projects_dir, f"*-{folder}.md"))
+                    for old in old_files:
+                        os.remove(old)
                 
                 filepath = os.path.join(projects_dir, filename)
                 with open(filepath, 'w', encoding='utf-8') as out_f:
                     out_f.write(md_content)
+                    
+                # Save the JSON back in case the date was updated from "TODAY"
+                with open(json_path, 'w', encoding='utf-8') as json_out:
+                    json.dump(updated_data, json_out, indent=2)
+                    
                 print(f" -> Generated: {filename}")
                 
             except json.JSONDecodeError as e:

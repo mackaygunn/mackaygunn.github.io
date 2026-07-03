@@ -16,6 +16,8 @@ All project data is permanently stored in the **`_project_data`** folder.
 
 **Important Rule:** The `project_folder` field in your JSON file is critical. It determines the URL of the project and where the Python script looks for your images. (e.g., `"project_folder": "my-drone-project"`).
 
+**Pro-Tip (Auto-Sorting):** The `template.json` file has `"date": "TODAY"`. If you leave it as `"TODAY"`, the script will automatically assign today's exact date to the project when you run it, guaranteeing your brand new project appears at the very top of your homepage! If you ever want to bump an older project back to the top of the homepage, just change its date back to `"TODAY"` and re-run the script.
+
 ---
 
 ## 2. Prepare Your Images
