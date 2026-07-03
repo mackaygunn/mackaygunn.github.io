@@ -9,7 +9,7 @@ image: "/assets/images/projects/lunchbox/cover.jpg"
 thumbnail: "/assets/images/projects/lunchbox/cover.jpg"
 ---
 
-<img src="{{ '/assets/images/projects/lunchbox/cover.jpg' | relative_url }}" alt="Project Cover" style="width: 100%; max-width: 350px; display: block; margin: 0 auto 2rem auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+<img src="{{ '/assets/images/projects/lunchbox/cover.jpg' | relative_url }}" alt="Project Cover" style="width: 250px; height: auto; display: block; margin: 0 auto 2rem auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
 
 ## Overview
 **Project Type:** Product Design • Embedded Systems • Thermal Engineering<br>
