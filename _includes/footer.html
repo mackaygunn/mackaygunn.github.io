@@ -1,0 +1,19 @@
+<footer class="site-footer h-card">
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <p class="contact-list">
+          {% if site.email %}
+            <a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a>
+          {% endif %}
+        </p>
+      </div>
+      <div class="footer-col footer-col-2">
+        <p>{{ site.description | escape }}</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; {{ site.time | date: '%Y' }} {{ site.title | escape }}. All rights reserved.</p>
+    </div>
+  </div>
+</footer>

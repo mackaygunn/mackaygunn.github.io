@@ -1,0 +1,293 @@
+// Buttons
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: center;
+  border: 1px solid transparent;
+
+  &.btn-primary {
+    background-color: var(--accent-color);
+    color: #ffffff;
+    
+    &:hover {
+      background-color: var(--accent-hover);
+      color: #ffffff;
+    }
+  }
+
+  &.btn-secondary {
+    background-color: transparent;
+    color: var(--text-color);
+    border-color: var(--border-color);
+    
+    &:hover {
+      background-color: var(--bg-secondary);
+      border-color: var(--text-secondary);
+    }
+  }
+}
+
+// Hero Section
+.hero {
+  padding: $spacing-xl 0;
+  text-align: center;
+
+  .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: $spacing-xs;
+    letter-spacing: -1px;
+
+    .accent {
+      color: var(--accent-color);
+    }
+
+    @media screen and (max-width: $breakpoint-md) {
+      font-size: 2.5rem;
+    }
+  }
+
+  .hero-subtitle {
+    font-size: 1.5rem;
+    color: var(--text-secondary);
+    font-weight: 400;
+    margin-bottom: $spacing-lg;
+
+    @media screen and (max-width: $breakpoint-md) {
+      font-size: 1.25rem;
+    }
+  }
+
+  .hero-description {
+    font-size: 1.125rem;
+    margin-bottom: $spacing-lg;
+  }
+
+  .hero-actions {
+    display: flex;
+    gap: $spacing-md;
+    justify-content: center;
+
+    @media screen and (max-width: $breakpoint-md) {
+      flex-direction: column;
+    }
+  }
+}
+
+// Project Details
+.project-detail {
+  max-width: 800px;
+  margin: $spacing-xl auto;
+
+  .project-header {
+    text-align: center;
+    margin-bottom: $spacing-lg;
+  }
+
+  .project-title {
+    font-size: 2.5rem;
+    margin-bottom: $spacing-xs;
+  }
+
+  .project-meta {
+    color: var(--text-secondary);
+    margin-bottom: $spacing-sm;
+  }
+
+  .project-tags {
+    display: flex;
+    gap: $spacing-xs;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .tag {
+      background: var(--bg-secondary);
+      color: var(--text-secondary);
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+      font-size: 0.875rem;
+      border: 1px solid var(--border-color);
+    }
+  }
+
+  .project-hero-image {
+    margin-bottom: $spacing-xl;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .project-content {
+    h2 {
+      margin-top: $spacing-lg;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: $spacing-xs;
+    }
+  }
+}
+
+// Theme Toggle
+.theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: background-color 0.2s ease;
+
+  &:hover {
+    background-color: var(--bg-secondary);
+  }
+}
+
+// Projects Section
+.projects-section {
+  padding: $spacing-xl 0;
+
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: $spacing-lg;
+    flex-wrap: wrap;
+    gap: $spacing-md;
+
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 0;
+    }
+  }
+}
+
+// Filter Controls
+.filter-controls {
+  display: flex;
+  gap: $spacing-sm;
+  flex-wrap: wrap;
+
+  .filter-btn {
+    background: transparent;
+    border: 1px solid var(--border-color);
+    color: var(--text-secondary);
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    &:hover {
+      background: var(--bg-secondary);
+      color: var(--text-color);
+    }
+
+    &.active {
+      background: var(--text-color);
+      color: var(--bg-color);
+      border-color: var(--text-color);
+    }
+  }
+}
+
+// Projects Grid
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: $spacing-lg;
+}
+
+// Project Card
+.project-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: block; // For filter animation
+  
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+
+  .project-card-link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+      color: inherit;
+    }
+  }
+
+  .project-card-image {
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background: var(--border-color);
+    
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+  }
+
+  &:hover .project-card-image img {
+    transform: scale(1.05);
+  }
+
+  .project-card-content {
+    padding: $spacing-md;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  .project-card-title {
+    font-size: 1.25rem;
+    margin-bottom: $spacing-xs;
+    color: var(--text-color);
+  }
+
+  .project-card-summary {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    margin-bottom: $spacing-md;
+    flex-grow: 1;
+  }
+
+  .project-card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $spacing-xs;
+
+    .tag {
+      font-size: 0.75rem;
+      background: var(--bg-color);
+      border: 1px solid var(--border-color);
+      color: var(--text-secondary);
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+    }
+  }
+}

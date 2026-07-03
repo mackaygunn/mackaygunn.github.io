@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<article class="project-detail">
+  <header class="project-header">
+    <h1 class="project-title">{{ page.title | escape }}</h1>
+    <div class="project-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
+    </div>
+    {% if page.tags %}
+    <div class="project-tags">
+      {% for tag in page.tags %}
+        <span class="tag">{{ tag }}</span>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </header>
+
+  {% if page.thumbnail %}
+  <div class="project-hero-image">
+    <img src="{{ page.thumbnail | relative_url }}" alt="{{ page.title | escape }}">
+  </div>
+  {% endif %}
+
+  <div class="project-content">
+    {{ content }}
+  </div>
+</article>

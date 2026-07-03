@@ -1,0 +1,29 @@
+---
+layout: default
+title: Home
+---
+{% include hero.html %}
+
+<section id="projects" class="projects-section">
+  <div class="wrapper">
+    <div class="section-header">
+      <h2 class="section-title">Selected Works</h2>
+      <div class="filter-controls" id="filter-controls">
+        <button class="filter-btn active" data-filter="all">All</button>
+        {% assign all_tags = site.projects | map: 'tags' | join: ',' | split: ',' | uniq | sort %}
+        {% for tag in all_tags %}
+          {% if tag != "" %}
+          <button class="filter-btn" data-filter="{{ tag | strip }}">{{ tag | strip }}</button>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="projects-grid" id="projects-grid">
+      {% assign sorted_projects = site.projects | sort: 'date' | reverse %}
+      {% for project in sorted_projects %}
+        {% include project-card.html project=project %}
+      {% endfor %}
+    </div>
+  </div>
+</section>

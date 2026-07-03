@@ -1,0 +1,18 @@
+<article class="project-card" data-tags="{% for tag in include.project.tags %}{{ tag }} {% endfor %}">
+  <a href="{{ include.project.url | relative_url }}" class="project-card-link">
+    {% if include.project.thumbnail %}
+    <div class="project-card-image">
+      <img src="{{ include.project.thumbnail | relative_url }}" alt="{{ include.project.title | escape }}">
+    </div>
+    {% endif %}
+    <div class="project-card-content">
+      <h3 class="project-card-title">{{ include.project.title | escape }}</h3>
+      <p class="project-card-summary">{{ include.project.summary | escape }}</p>
+      <div class="project-card-tags">
+        {% for tag in include.project.tags %}
+          <span class="tag">{{ tag }}</span>
+        {% endfor %}
+      </div>
+    </div>
+  </a>
+</article>
