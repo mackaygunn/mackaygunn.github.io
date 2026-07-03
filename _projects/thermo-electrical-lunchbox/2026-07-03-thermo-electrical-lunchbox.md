@@ -4,7 +4,7 @@ title: "Thermo-Electrical Food Compartment"
 date: 2026-07-03
 categories: [product-design, embedded-systems]
 tags: [Thermal-Engineering, SketchUp, Arduino, Systems-Design]
-image: "/assets/images/projects/lunchbox/cover.jpg"
+image: "/ramiruliyanage.github.io/assets/images/projects/lunchbox/cover.jpg"
 ---
 
 ## Overview
@@ -58,21 +58,21 @@ The final prototype underwent rigorous functional verification.
 
 ### CAD Component Geometry
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin-bottom: 15px;">
-  <img src="/assets/images/projects/lunchbox/cad-front.jpg" alt="Front View" style="width:100%; border-radius: 4px; border: 1px solid #eee;">
-  <img src="/assets/images/projects/lunchbox/cad-side.jpg" alt="Side View" style="width:100%; border-radius: 4px; border: 1px solid #eee;">
-  <img src="/assets/images/projects/lunchbox/cad-top.jpg" alt="Top View" style="width:100%; border-radius: 4px; border: 1px solid #eee;">
-  <img src="/assets/images/projects/lunchbox/cad-lid.jpg" alt="Lid Details" style="width:100%; border-radius: 4px; border: 1px solid #eee;">
-  <img src="/assets/images/projects/lunchbox/cad-dessert.jpg" alt="Dessert Compartment" style="width:100%; border-radius: 4px; border: 1px solid #eee;">
+  <img src="/ramiruliyanage.github.io/assets/images/projects/lunchbox/cad-front.jpg" alt="Front View" style="width:100%; border-radius: 4px; border: 1px solid #eee;">
+  <img src="/ramiruliyanage.github.io/assets/images/projects/lunchbox/cad-side.jpg" alt="Side View" style="width:100%; border-radius: 4px; border: 1px solid #eee;">
+  <img src="/ramiruliyanage.github.io/assets/images/projects/lunchbox/cad-top.jpg" alt="Top View" style="width:100%; border-radius: 4px; border: 1px solid #eee;">
+  <img src="/ramiruliyanage.github.io/assets/images/projects/lunchbox/cad-lid.jpg" alt="Lid Details" style="width:100%; border-radius: 4px; border: 1px solid #eee;">
+  <img src="/ramiruliyanage.github.io/assets/images/projects/lunchbox/cad-dessert.jpg" alt="Dessert Compartment" style="width:100%; border-radius: 4px; border: 1px solid #eee;">
 </div>
 *Caption: Orthographic profiles and individual component geometries of the lunch box casing.*
 
 ### System Integration & Prototyping
 
-![Exploded Diagram](/assets/images/projects/lunchbox/exploded-view.jpg)
+![Exploded Diagram](/ramiruliyanage.github.io/assets/images/projects/lunchbox/exploded-view.jpg)
 *Caption: Exploded view detailing component placement and modular architecture.*
 
-![Circuit Diagram](/assets/images/projects/lunchbox/circuit-diagram.jpg)
+![Circuit Diagram](/ramiruliyanage.github.io/assets/images/projects/lunchbox/circuit-diagram.jpg)
 *Caption: Electronic architecture and embedded control logic for the thermal system.*
 
-![Physical Prototype](/assets/images/projects/lunchbox/prototype.jpg)
+![Physical Prototype](/ramiruliyanage.github.io/assets/images/projects/lunchbox/prototype.jpg)
 *Caption: Assembled physical prototype undergoing initial thermal testing.*
