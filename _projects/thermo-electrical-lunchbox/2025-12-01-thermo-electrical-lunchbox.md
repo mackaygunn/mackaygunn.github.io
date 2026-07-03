@@ -12,9 +12,9 @@ thumbnail: "/assets/images/projects/lunchbox/cover.jpg"
 <img src="{{ '/assets/images/projects/lunchbox/cover.jpg' | relative_url }}" alt="Project Cover" style="width: 100%; max-width: 350px; display: block; margin: 0 auto 2rem auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
 
 ## Overview
-**Project Type:** Product Design • Embedded Systems • Thermal Engineering 
-**Duration:** June 2025 – October 2025 
-**Team:** 8 Members 
+**Project Type:** Product Design • Embedded Systems • Thermal Engineering<br>
+**Duration:** June 2025 – October 2025<br>
+**Team:** 8 Members<br>
 **My Role:** Mechanical Design & Electronic Systems Architecture
 
 Designed and developed a portable self-heating lunch box that actively heats food while simultaneously cooling a secondary compartment using a Peltier thermoelectric module. My specific contribution focused on the electronic system architecture, embedded control logic using Arduino, and the mechanical integration of the thermal components.
@@ -72,13 +72,17 @@ The final prototype underwent rigorous functional verification.
 
 ### System Integration & Prototyping
 
-<div style="max-width: 400px; margin: 0 auto; text-align: center;">
-  <img src="{{ '/assets/images/projects/lunchbox/exploded-view.jpg' | relative_url }}" alt="Exploded Diagram" style="width: 100%; border-radius: 6px; border: 1px solid #ddd; margin-bottom: 5px;">
-  <p style="font-size: 0.9em; color: #666; margin-bottom: 2rem;"><em>Exploded view detailing component placement and modular architecture.</em></p>
-
-  <img src="{{ '/assets/images/projects/lunchbox/circuit-diagram.jpg' | relative_url }}" alt="Circuit Diagram" style="width: 100%; border-radius: 6px; border: 1px solid #ddd; margin-bottom: 5px;">
-  <p style="font-size: 0.9em; color: #666; margin-bottom: 2rem;"><em>Electronic architecture and embedded control logic for the thermal system.</em></p>
-
-  <img src="{{ '/assets/images/projects/lunchbox/cover.jpg' | relative_url }}" alt="Physical Prototype" style="width: 100%; border-radius: 6px; border: 1px solid #ddd; margin-bottom: 5px;">
-  <p style="font-size: 0.9em; color: #666; margin-bottom: 2rem;"><em>Assembled physical prototype undergoing initial thermal testing.</em></p>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-bottom: 2rem; text-align: center;">
+  <div>
+    <img src="{{ '/assets/images/projects/lunchbox/exploded-view.jpg' | relative_url }}" alt="Exploded Diagram" style="width: 100%; border-radius: 6px; border: 1px solid #ddd; margin-bottom: 5px;">
+    <p style="font-size: 0.85em; color: #666; line-height: 1.4;"><em>Exploded view detailing component placement and modular architecture.</em></p>
+  </div>
+  <div>
+    <img src="{{ '/assets/images/projects/lunchbox/circuit-diagram.jpg' | relative_url }}" alt="Circuit Diagram" style="width: 100%; border-radius: 6px; border: 1px solid #ddd; margin-bottom: 5px;">
+    <p style="font-size: 0.85em; color: #666; line-height: 1.4;"><em>Electronic architecture and embedded control logic for the thermal system.</em></p>
+  </div>
+  <div>
+    <img src="{{ '/assets/images/projects/lunchbox/cover.jpg' | relative_url }}" alt="Physical Prototype" style="width: 100%; border-radius: 6px; border: 1px solid #ddd; margin-bottom: 5px;">
+    <p style="font-size: 0.85em; color: #666; line-height: 1.4;"><em>Assembled physical prototype undergoing initial thermal testing.</em></p>
+  </div>
 </div>
