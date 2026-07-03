@@ -1,7 +1,7 @@
 ---
 layout: project
 title: "Thermo-Electrical Food Compartment"
-date: 2026-07-03
+date: 2025-12-01
 categories: [design-simulation, physical-projects]
 tags: [Thermal-Engineering, SketchUp, Arduino, Systems-Design]
 image: "/ramiruliyanage.github.io/assets/images/projects/lunchbox/cover.jpg"
