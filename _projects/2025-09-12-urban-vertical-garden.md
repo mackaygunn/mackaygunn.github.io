@@ -67,11 +67,7 @@ Learned to convert qualitative sustainability goals into quantitative decision-m
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-bottom: 2rem; text-align: center;">
   <div>
-    <img src="{{ '/assets/images/projects/urban-vertical-garden/roof-layout.jpg' | relative_url }}" alt="Diagram" style="width: 100%; border-radius: 6px; border: 1px solid #ddd; margin-bottom: 5px;">
-    <p style="font-size: 0.85em; color: #666; line-height: 1.4;"><em></em></p>
-  </div>
-  <div>
-    <img src="{{ '/assets/images/projects/urban-vertical-garden/decision-matrix.jpg' | relative_url }}" alt="Diagram" style="width: 100%; border-radius: 6px; border: 1px solid #ddd; margin-bottom: 5px;">
+    <img src="{{ '/assets/images/projects/urban-vertical-garden/rood plant front view.jpg' | relative_url }}" alt="Diagram" style="width: 100%; border-radius: 6px; border: 1px solid #ddd; margin-bottom: 5px;">
     <p style="font-size: 0.85em; color: #666; line-height: 1.4;"><em></em></p>
   </div>
 </div>

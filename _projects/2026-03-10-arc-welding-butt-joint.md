@@ -61,15 +61,15 @@ Mastered arc stability and travel speed coordination for consistent fusion.
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-bottom: 2rem; text-align: center;">
   <div>
-    <img src="{{ '/assets/images/projects/arc-welding-butt-joint/edge-bevel.jpg' | relative_url }}" alt="Diagram" style="width: 100%; border-radius: 6px; border: 1px solid #ddd; margin-bottom: 5px;">
+    <img src="{{ '/assets/images/projects/arc-welding-butt-joint/filing.jpg' | relative_url }}" alt="Diagram" style="width: 100%; border-radius: 6px; border: 1px solid #ddd; margin-bottom: 5px;">
     <p style="font-size: 0.85em; color: #666; line-height: 1.4;"><em></em></p>
   </div>
   <div>
-    <img src="{{ '/assets/images/projects/arc-welding-butt-joint/tack-welding.jpg' | relative_url }}" alt="Diagram" style="width: 100%; border-radius: 6px; border: 1px solid #ddd; margin-bottom: 5px;">
+    <img src="{{ '/assets/images/projects/arc-welding-butt-joint/product.jpg' | relative_url }}" alt="Diagram" style="width: 100%; border-radius: 6px; border: 1px solid #ddd; margin-bottom: 5px;">
     <p style="font-size: 0.85em; color: #666; line-height: 1.4;"><em></em></p>
   </div>
   <div>
-    <img src="{{ '/assets/images/projects/arc-welding-butt-joint/finished-weld.jpg' | relative_url }}" alt="Diagram" style="width: 100%; border-radius: 6px; border: 1px solid #ddd; margin-bottom: 5px;">
+    <img src="{{ '/assets/images/projects/arc-welding-butt-joint/two-metals.jpg' | relative_url }}" alt="Diagram" style="width: 100%; border-radius: 6px; border: 1px solid #ddd; margin-bottom: 5px;">
     <p style="font-size: 0.85em; color: #666; line-height: 1.4;"><em></em></p>
   </div>
 </div>

@@ -17,7 +17,13 @@ def build_markdown(data):
     team = meta.get("team", "")
     role = meta.get("my_role", "")
     
-    cover_image = "cover.jpg"
+    cover_image = "cover.jpg" # Fallback
+    image_dir = os.path.join('assets', 'images', 'projects', folder)
+    if os.path.exists(image_dir):
+        for f in os.listdir(image_dir):
+            if f.lower().startswith("cover."):
+                cover_image = f
+                break
     
     # Start building MD
     md = f"""---

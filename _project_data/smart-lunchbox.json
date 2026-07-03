@@ -41,14 +41,5 @@
   "challenges": "Balancing heating power requirements with device weight limits.",
   "results": "Prototype achieved 70\u00b0C in 16 minutes with stable thermal cut-off control.",
   "key_learning": "Gained experience in cross-disciplinary integration of electrical loads and mechanical insulation.",
-  "diagrams": [
-    {
-      "file": "exploded-view.jpg",
-      "caption": ""
-    },
-    {
-      "file": "circuit-diagram.jpg",
-      "caption": ""
-    }
-  ]
+  "diagrams": []
 }

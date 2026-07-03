@@ -67,15 +67,7 @@ Deepened understanding of thread geometry, pitch, and shear strength.
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-bottom: 2rem; text-align: center;">
   <div>
-    <img src="{{ '/assets/images/projects/custom-fastener-fabrication/die-threading.jpg' | relative_url }}" alt="Diagram" style="width: 100%; border-radius: 6px; border: 1px solid #ddd; margin-bottom: 5px;">
-    <p style="font-size: 0.85em; color: #666; line-height: 1.4;"><em></em></p>
-  </div>
-  <div>
-    <img src="{{ '/assets/images/projects/custom-fastener-fabrication/riveting-process.jpg' | relative_url }}" alt="Diagram" style="width: 100%; border-radius: 6px; border: 1px solid #ddd; margin-bottom: 5px;">
-    <p style="font-size: 0.85em; color: #666; line-height: 1.4;"><em></em></p>
-  </div>
-  <div>
-    <img src="{{ '/assets/images/projects/custom-fastener-fabrication/final-assembly.jpg' | relative_url }}" alt="Diagram" style="width: 100%; border-radius: 6px; border: 1px solid #ddd; margin-bottom: 5px;">
+    <img src="{{ '/assets/images/projects/custom-fastener-fabrication/nut and bolt final.jpg' | relative_url }}" alt="Diagram" style="width: 100%; border-radius: 6px; border: 1px solid #ddd; margin-bottom: 5px;">
     <p style="font-size: 0.85em; color: #666; line-height: 1.4;"><em></em></p>
   </div>
 </div>

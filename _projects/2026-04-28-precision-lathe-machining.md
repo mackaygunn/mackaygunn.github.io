@@ -5,11 +5,11 @@ date: 2026-04-28
 categories: ["manufacturing", "machining"]
 tags: ["Lathe", "Subtractive Manufacturing", "Mild Steel"]
 duration: "Year 1 Semester 2"
-image: "/assets/images/projects/precision-lathe-machining/cover.jpg"
-thumbnail: "/assets/images/projects/precision-lathe-machining/cover.jpg"
+image: "/assets/images/projects/precision-lathe-machining/cover.png"
+thumbnail: "/assets/images/projects/precision-lathe-machining/cover.png"
 ---
 
-<img src="{{ '/assets/images/projects/precision-lathe-machining/cover.jpg' | relative_url }}" alt="Project Cover" style="width: 250px; height: auto; display: block; margin: 0 auto 2rem auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+<img src="{{ '/assets/images/projects/precision-lathe-machining/cover.png' | relative_url }}" alt="Project Cover" style="width: 250px; height: auto; display: block; margin: 0 auto 2rem auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
 
 ## Overview
 **Project Type:** Practical Laboratory<br>
@@ -61,15 +61,15 @@ Gained an understanding of mechanical feedback (vibration, chip formation) and t
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-bottom: 2rem; text-align: center;">
   <div>
-    <img src="{{ '/assets/images/projects/precision-lathe-machining/lathe-setup.jpg' | relative_url }}" alt="Diagram" style="width: 100%; border-radius: 6px; border: 1px solid #ddd; margin-bottom: 5px;">
+    <img src="{{ '/assets/images/projects/precision-lathe-machining/cutting.jpg' | relative_url }}" alt="Diagram" style="width: 100%; border-radius: 6px; border: 1px solid #ddd; margin-bottom: 5px;">
     <p style="font-size: 0.85em; color: #666; line-height: 1.4;"><em></em></p>
   </div>
   <div>
-    <img src="{{ '/assets/images/projects/precision-lathe-machining/machining-process.jpg' | relative_url }}" alt="Diagram" style="width: 100%; border-radius: 6px; border: 1px solid #ddd; margin-bottom: 5px;">
+    <img src="{{ '/assets/images/projects/precision-lathe-machining/photo.jpg' | relative_url }}" alt="Diagram" style="width: 100%; border-radius: 6px; border: 1px solid #ddd; margin-bottom: 5px;">
     <p style="font-size: 0.85em; color: #666; line-height: 1.4;"><em></em></p>
   </div>
   <div>
-    <img src="{{ '/assets/images/projects/precision-lathe-machining/final-part.jpg' | relative_url }}" alt="Diagram" style="width: 100%; border-radius: 6px; border: 1px solid #ddd; margin-bottom: 5px;">
+    <img src="{{ '/assets/images/projects/precision-lathe-machining/product.jpg' | relative_url }}" alt="Diagram" style="width: 100%; border-radius: 6px; border: 1px solid #ddd; margin-bottom: 5px;">
     <p style="font-size: 0.85em; color: #666; line-height: 1.4;"><em></em></p>
   </div>
 </div>
