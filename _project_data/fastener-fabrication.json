@@ -1,10 +1,16 @@
-
 {
   "project_folder": "custom-fastener-fabrication",
   "title": "Custom M8 Fastener Fabrication & Joint Assembly",
   "date": "2026-04-28",
-  "categories": ["manufacturing", "fabrication"],
-  "tags": ["Threading", "Tap and Die", "Mechanical Assembly"],
+  "categories": [
+    "manufacturing",
+    "fabrication"
+  ],
+  "tags": [
+    "Threading",
+    "Tap and Die",
+    "Mechanical Assembly"
+  ],
   "overview_metadata": {
     "project_type": "Practical Laboratory",
     "duration": "April 2026",
@@ -19,12 +25,24 @@
     "Ensure seamless engagement with standardized M8 nuts."
   ],
   "engineering_process": "Rod preparation, edge beveling for die seating, manual threading using die stock with periodic chip clearing, and permanent head-forming via hammer-riveting.",
-  "technical_details": "Mild Steel Rod (Ø 8mm); Metric M8x1.25 coarse thread.",
+  "technical_details": "Mild Steel Rod (\u00d8 8mm); Metric M8x1.25 coarse thread.",
   "design_decisions": "Chose cold-forming (riveting) for the bolt head to preserve metal grain flow rather than welding.",
-  "tools_and_software": ["Tap and Die Set", "Bench Vice", "Hand Files"],
-  "engineering_skills_demonstrated": ["Manual Threading", "Cold Forming", "Mechanical Fitment"],
+  "tools_and_software": [
+    "Tap and Die Set",
+    "Bench Vice",
+    "Hand Files"
+  ],
+  "engineering_skills_demonstrated": [
+    "Manual Threading",
+    "Cold Forming",
+    "Mechanical Fitment"
+  ],
   "challenges": "Preventing thread tearing during manual die operation.",
   "results": "Fully functional 110mm bolt with clean threads and a secure custom head.",
   "key_learning": "Deepened understanding of thread geometry, pitch, and shear strength.",
-  "gallery": ["die-threading.jpg", "riveting-process.jpg", "final-assembly.jpg"]
+  "gallery": [
+    "die-threading.jpg",
+    "riveting-process.jpg",
+    "final-assembly.jpg"
+  ]
 }

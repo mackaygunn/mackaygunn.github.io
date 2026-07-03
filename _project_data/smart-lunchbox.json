@@ -1,10 +1,17 @@
-
 {
   "project_folder": "thermo-electrical-lunchbox",
   "title": "Smart Thermo-Electrical Lunchbox",
   "date": "2025-10-25",
-  "categories": ["product-design", "thermodynamics"],
-  "tags": ["CAD", "Arduino", "PTC Heater", "Thermal Control"],
+  "categories": [
+    "product-design",
+    "thermodynamics"
+  ],
+  "tags": [
+    "CAD",
+    "Arduino",
+    "PTC Heater",
+    "Thermal Control"
+  ],
   "overview_metadata": {
     "project_type": "Product Design & Engineering",
     "duration": "June 2025 - October 2025",
@@ -12,19 +19,36 @@
     "my_role": "Electronics & Control Logic Designer"
   },
   "overview": "A portable smart lunchbox design featuring an automated heating system. I developed the electronics and control logic to ensure safe, energy-efficient food warming.",
-  "problem_statement": "The need for a portable, lightweight, and affordable solution to actively heat meals to a safe serving temperature (70°C) without the bulk of traditional heaters.",
+  "problem_statement": "The need for a portable, lightweight, and affordable solution to actively heat meals to a safe serving temperature (70\u00b0C) without the bulk of traditional heaters.",
   "objectives": [
-    "Heat 500g of food to 70°C in under 30 minutes.",
+    "Heat 500g of food to 70\u00b0C in under 30 minutes.",
     "Automated temperature regulation with safety interlocks.",
     "Device weight under 1.5 kg."
   ],
   "engineering_process": "Thermal load calculation, electronics component selection, Arduino-based logic programming, and prototype testing for temperature ramp-up.",
   "technical_details": "60W PTC Heater; Arduino Uno; 20mm Polyurethane insulation; 2mm Stainless Steel liner.",
   "design_decisions": "Integrated a self-regulating PTC heater to improve inherent safety against thermal runaway.",
-  "tools_and_software": ["OnShape", "Arduino IDE", "Micro Controllers"],
-  "engineering_skills_demonstrated": ["Thermodynamics", "Control Systems Logic", "Rapid Prototyping"],
+  "tools_and_software": [
+    "OnShape",
+    "Arduino IDE",
+    "Micro Controllers"
+  ],
+  "engineering_skills_demonstrated": [
+    "Thermodynamics",
+    "Control Systems Logic",
+    "Rapid Prototyping"
+  ],
   "challenges": "Balancing heating power requirements with device weight limits.",
-  "results": "Prototype achieved 70°C in 16 minutes with stable thermal cut-off control.",
+  "results": "Prototype achieved 70\u00b0C in 16 minutes with stable thermal cut-off control.",
   "key_learning": "Gained experience in cross-disciplinary integration of electrical loads and mechanical insulation.",
-  "gallery": ["cover.jpg", "exploded-view.jpg", "circuit-diagram.jpg", "cad-top.jpg", "cad-side.jpg", "cad-front.jpg", "cad-dessert.jpg", "cad-lid.jpg"]
+  "gallery": [
+    "cover.jpg",
+    "exploded-view.jpg",
+    "circuit-diagram.jpg",
+    "cad-top.jpg",
+    "cad-side.jpg",
+    "cad-front.jpg",
+    "cad-dessert.jpg",
+    "cad-lid.jpg"
+  ]
 }

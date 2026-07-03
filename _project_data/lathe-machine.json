@@ -1,10 +1,16 @@
-
 {
   "project_folder": "precision-lathe-machining",
   "title": "Precision Component Machining via Engine Lathe",
   "date": "2026-04-28",
-  "categories": ["manufacturing", "machining"],
-  "tags": ["Lathe", "Subtractive Manufacturing", "Mild Steel"],
+  "categories": [
+    "manufacturing",
+    "machining"
+  ],
+  "tags": [
+    "Lathe",
+    "Subtractive Manufacturing",
+    "Mild Steel"
+  ],
   "overview_metadata": {
     "project_type": "Practical Laboratory",
     "duration": "April 2026",
@@ -19,12 +25,24 @@
     "Maintain strict dimensional accuracy and optimal surface finish."
   ],
   "engineering_process": "Setup of workpiece in 3-jaw chuck, calibration of spindle speed (315 RPM), execution of sequential longitudinal passes with coolant, and continuous verification using Vernier calipers.",
-  "technical_details": "Mild Steel Cylindrical Rod; Target diameters: 20.18 mm and 23.18 mm; Cut Depths: 0.4mm–0.5mm.",
+  "technical_details": "Mild Steel Cylindrical Rod; Target diameters: 20.18 mm and 23.18 mm; Cut Depths: 0.4mm\u20130.5mm.",
   "design_decisions": "Utilized sequential shallow cuts instead of aggressive deep cuts to prevent workpiece deflection and tool wear.",
-  "tools_and_software": ["Engine Lathe", "Hard Steel Cutting Tool", "Vernier Calipers"],
-  "engineering_skills_demonstrated": ["Manual Subtractive Manufacturing", "Machining Parameter Optimization", "Quality Control"],
+  "tools_and_software": [
+    "Engine Lathe",
+    "Hard Steel Cutting Tool",
+    "Vernier Calipers"
+  ],
+  "engineering_skills_demonstrated": [
+    "Manual Subtractive Manufacturing",
+    "Machining Parameter Optimization",
+    "Quality Control"
+  ],
   "challenges": "Managing potential tool deflection on the 80mm overhang by adjusting feed rates.",
   "results": "Successfully manufactured the component within manual machining tolerances.",
   "key_learning": "Gained an understanding of mechanical feedback (vibration, chip formation) and the principles of Design-for-Manufacturability.",
-  "gallery": ["lathe-setup.jpg", "machining-process.jpg", "final-part.jpg"]
+  "gallery": [
+    "lathe-setup.jpg",
+    "machining-process.jpg",
+    "final-part.jpg"
+  ]
 }
