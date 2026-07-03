@@ -10,7 +10,10 @@ thumbnail: "/assets/images/projects/lunchbox/cover.jpg"
 ---
 
 ## Overview
-**Project Type:** Product Design • Embedded Systems • Thermal Engineering
+**Project Type:**
+* Product Design
+* Embedded Systems
+* Thermal Engineering
 **Duration:** June 2025 – October 2025
 **Team:** 8 Members
 **My Role:** Mechanical Design & Electronic Systems Architecture
