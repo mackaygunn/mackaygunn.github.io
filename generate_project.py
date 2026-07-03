@@ -125,7 +125,8 @@ def main():
     if not os.path.exists(projects_dir):
         os.makedirs(projects_dir)
 
-    json_files = glob.glob(os.path.join(data_dir, '*.json'))
+    # Get all json files in _project_data directory
+    json_files = [os.path.join(data_dir, f) for f in os.listdir(data_dir) if f.endswith('.json') and f != 'template.json']
     
     if not json_files:
         print(f"No JSON files found in {data_dir}")
