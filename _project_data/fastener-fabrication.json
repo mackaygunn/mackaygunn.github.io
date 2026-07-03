@@ -17,7 +17,7 @@
     "team": "Group GA 5/6 SF",
     "my_role": "Engineering Student"
   },
-  "overview": "A fabrication project bridging theoretical machine design with shop-floor execution, resulting in a functional, custom M8x1.25 threaded bolt and non-permanent joint assembly.",
+  "overview_text": "A fabrication project bridging theoretical machine design with shop-floor execution, resulting in a functional, custom M8x1.25 threaded bolt and non-permanent joint assembly.",
   "problem_statement": "Producing specific, standardized, load-bearing thread profiles manually to ensure smooth engagement and structural integrity.",
   "objectives": [
     "Fabricate an M8x1.25 bolt with a 30mm threaded section.",
@@ -32,7 +32,7 @@
     "Bench Vice",
     "Hand Files"
   ],
-  "engineering_skills_demonstrated": [
+  "engineering_skills": [
     "Manual Threading",
     "Cold Forming",
     "Mechanical Fitment"
@@ -40,9 +40,18 @@
   "challenges": "Preventing thread tearing during manual die operation.",
   "results": "Fully functional 110mm bolt with clean threads and a secure custom head.",
   "key_learning": "Deepened understanding of thread geometry, pitch, and shear strength.",
-  "gallery": [
-    "die-threading.jpg",
-    "riveting-process.jpg",
-    "final-assembly.jpg"
+  "diagrams": [
+    {
+      "file": "die-threading.jpg",
+      "caption": ""
+    },
+    {
+      "file": "riveting-process.jpg",
+      "caption": ""
+    },
+    {
+      "file": "final-assembly.jpg",
+      "caption": ""
+    }
   ]
 }

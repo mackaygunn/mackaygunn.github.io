@@ -17,7 +17,7 @@
     "team": "5 Members",
     "my_role": "Lead Decision Analyst"
   },
-  "overview": "A sustainable urban planning project proposing a scalable rooftop micro-garden system optimized for high-rise residential environments.",
+  "overview_text": "A sustainable urban planning project proposing a scalable rooftop micro-garden system optimized for high-rise residential environments.",
   "problem_statement": "Lack of space in high-density urban housing restricts access to fresh produce and disconnects residents from sustainable food sources.",
   "objectives": [
     "Propose a cost-effective, space-efficient garden layout.",
@@ -32,7 +32,7 @@
     "Spreadsheet Analysis",
     "Decision Matrices"
   ],
-  "engineering_skills_demonstrated": [
+  "engineering_skills": [
     "Systems Engineering",
     "Decision Analysis",
     "Resource Allocation"
@@ -40,9 +40,14 @@
   "challenges": "Accounting for structural weight limits on existing rooftops.",
   "results": "Delivered a fully validated, CAD-modeled design proposal within strict budget constraints.",
   "key_learning": "Learned to convert qualitative sustainability goals into quantitative decision-making parameters.",
-  "gallery": [
-    "roof-layout.jpg",
-    "decision-matrix.jpg",
-    "cad-model.jpg"
+  "diagrams": [
+    {
+      "file": "roof-layout.jpg",
+      "caption": ""
+    },
+    {
+      "file": "decision-matrix.jpg",
+      "caption": ""
+    }
   ]
 }

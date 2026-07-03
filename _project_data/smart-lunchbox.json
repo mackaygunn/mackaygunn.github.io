@@ -18,7 +18,7 @@
     "team": "8 Members",
     "my_role": "Electronics & Control Logic Designer"
   },
-  "overview": "A portable smart lunchbox design featuring an automated heating system. I developed the electronics and control logic to ensure safe, energy-efficient food warming.",
+  "overview_text": "A portable smart lunchbox design featuring an automated heating system. I developed the electronics and control logic to ensure safe, energy-efficient food warming.",
   "problem_statement": "The need for a portable, lightweight, and affordable solution to actively heat meals to a safe serving temperature (70\u00b0C) without the bulk of traditional heaters.",
   "objectives": [
     "Heat 500g of food to 70\u00b0C in under 30 minutes.",
@@ -33,7 +33,7 @@
     "Arduino IDE",
     "Micro Controllers"
   ],
-  "engineering_skills_demonstrated": [
+  "engineering_skills": [
     "Thermodynamics",
     "Control Systems Logic",
     "Rapid Prototyping"
@@ -41,14 +41,14 @@
   "challenges": "Balancing heating power requirements with device weight limits.",
   "results": "Prototype achieved 70\u00b0C in 16 minutes with stable thermal cut-off control.",
   "key_learning": "Gained experience in cross-disciplinary integration of electrical loads and mechanical insulation.",
-  "gallery": [
-    "cover.jpg",
-    "exploded-view.jpg",
-    "circuit-diagram.jpg",
-    "cad-top.jpg",
-    "cad-side.jpg",
-    "cad-front.jpg",
-    "cad-dessert.jpg",
-    "cad-lid.jpg"
+  "diagrams": [
+    {
+      "file": "exploded-view.jpg",
+      "caption": ""
+    },
+    {
+      "file": "circuit-diagram.jpg",
+      "caption": ""
+    }
   ]
 }

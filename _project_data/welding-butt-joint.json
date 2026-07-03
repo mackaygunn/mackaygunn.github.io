@@ -17,7 +17,7 @@
     "team": "Group 6A6-F",
     "my_role": "Engineering Student"
   },
-  "overview": "A metallurgical engineering project demonstrating the creation of a permanent, high-strength fusion joint using Shielded Metal Arc Welding (SMAW).",
+  "overview_text": "A metallurgical engineering project demonstrating the creation of a permanent, high-strength fusion joint using Shielded Metal Arc Welding (SMAW).",
   "problem_statement": "Achieving full-penetration fusion between steel plates without causing warping or slag inclusions in structural connections.",
   "objectives": [
     "Execute a structurally sound Single V Butt joint.",
@@ -32,7 +32,7 @@
     "Chipping Hammer",
     "Engineering Protractor"
   ],
-  "engineering_skills_demonstrated": [
+  "engineering_skills": [
     "SMAW Welding",
     "Distortion Control",
     "Metallurgical Prep"
@@ -40,9 +40,18 @@
   "challenges": "Controlling thermal distortion and ensuring complete slag removal between passes.",
   "results": "Successful full-penetration V-butt weld with uniform bead profile.",
   "key_learning": "Mastered arc stability and travel speed coordination for consistent fusion.",
-  "gallery": [
-    "edge-bevel.jpg",
-    "tack-welding.jpg",
-    "finished-weld.jpg"
+  "diagrams": [
+    {
+      "file": "edge-bevel.jpg",
+      "caption": ""
+    },
+    {
+      "file": "tack-welding.jpg",
+      "caption": ""
+    },
+    {
+      "file": "finished-weld.jpg",
+      "caption": ""
+    }
   ]
 }

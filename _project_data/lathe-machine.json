@@ -17,7 +17,7 @@
     "team": "Group GA 5/6 SF",
     "my_role": "Engineering Student"
   },
-  "overview": "A hands-on manufacturing project focused on transforming raw cylindrical mild steel stock into a precise, multi-diameter machine component using manual subtractive manufacturing techniques.",
+  "overview_text": "A hands-on manufacturing project focused on transforming raw cylindrical mild steel stock into a precise, multi-diameter machine component using manual subtractive manufacturing techniques.",
   "problem_statement": "Addressing the fundamental challenge of manually converting raw metal stock into a functional, dimensionally accurate part without relying on automated CNC machinery to meet modern mechanical assembly standards.",
   "objectives": [
     "Master operational controls and safety protocols of an industrial Engine Lathe.",
@@ -32,7 +32,7 @@
     "Hard Steel Cutting Tool",
     "Vernier Calipers"
   ],
-  "engineering_skills_demonstrated": [
+  "engineering_skills": [
     "Manual Subtractive Manufacturing",
     "Machining Parameter Optimization",
     "Quality Control"
@@ -40,9 +40,18 @@
   "challenges": "Managing potential tool deflection on the 80mm overhang by adjusting feed rates.",
   "results": "Successfully manufactured the component within manual machining tolerances.",
   "key_learning": "Gained an understanding of mechanical feedback (vibration, chip formation) and the principles of Design-for-Manufacturability.",
-  "gallery": [
-    "lathe-setup.jpg",
-    "machining-process.jpg",
-    "final-part.jpg"
+  "diagrams": [
+    {
+      "file": "lathe-setup.jpg",
+      "caption": ""
+    },
+    {
+      "file": "machining-process.jpg",
+      "caption": ""
+    },
+    {
+      "file": "final-part.jpg",
+      "caption": ""
+    }
   ]
 }
