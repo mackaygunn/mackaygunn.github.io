@@ -2,16 +2,18 @@
 layout: project
 title: "Thermo-Electrical Food Compartment"
 date: 2026-07-03
-categories: [product-design, embedded-systems]
+categories: [design-simulation, physical-projects]
 tags: [Thermal-Engineering, SketchUp, Arduino, Systems-Design]
 image: "/ramiruliyanage.github.io/assets/images/projects/lunchbox/cover.jpg"
 ---
 
 ## Overview
 **Project Type:** Product Design • Embedded Systems • Thermal Engineering
-**Duration:** 2025
+**Duration:** June 2025 – October 2025
 **Team:** 8 Members
 **My Role:** Mechanical Design & Electronic Systems Architecture
+
+<img src="/ramiruliyanage.github.io/assets/images/projects/lunchbox/cover.jpg" alt="Project Cover" style="width: 100%; max-width: 800px; display: block; margin: 1.5rem auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
 
 Designed and developed a portable self-heating lunch box that actively heats food while simultaneously cooling a secondary compartment using a Peltier thermoelectric module. My specific contribution focused on the electronic system architecture, embedded control logic using Arduino, and the mechanical integration of the thermal components.
 
@@ -68,11 +70,13 @@ The final prototype underwent rigorous functional verification.
 
 ### System Integration & Prototyping
 
-![Exploded Diagram](/ramiruliyanage.github.io/assets/images/projects/lunchbox/exploded-view.jpg)
-*Caption: Exploded view detailing component placement and modular architecture.*
+<div style="max-width: 650px; margin: 0 auto; text-align: center;">
+  <img src="/ramiruliyanage.github.io/assets/images/projects/lunchbox/exploded-view.jpg" alt="Exploded Diagram" style="width: 100%; border-radius: 6px; border: 1px solid #ddd; margin-bottom: 5px;">
+  <p style="font-size: 0.9em; color: #666; margin-bottom: 2rem;"><em>Exploded view detailing component placement and modular architecture.</em></p>
 
-![Circuit Diagram](/ramiruliyanage.github.io/assets/images/projects/lunchbox/circuit-diagram.jpg)
-*Caption: Electronic architecture and embedded control logic for the thermal system.*
+  <img src="/ramiruliyanage.github.io/assets/images/projects/lunchbox/circuit-diagram.jpg" alt="Circuit Diagram" style="width: 100%; border-radius: 6px; border: 1px solid #ddd; margin-bottom: 5px;">
+  <p style="font-size: 0.9em; color: #666; margin-bottom: 2rem;"><em>Electronic architecture and embedded control logic for the thermal system.</em></p>
 
-![Physical Prototype](/ramiruliyanage.github.io/assets/images/projects/lunchbox/prototype.jpg)
-*Caption: Assembled physical prototype undergoing initial thermal testing.*
+  <img src="/ramiruliyanage.github.io/assets/images/projects/lunchbox/prototype.jpg" alt="Physical Prototype" style="width: 100%; border-radius: 6px; border: 1px solid #ddd; margin-bottom: 5px;">
+  <p style="font-size: 0.9em; color: #666; margin-bottom: 2rem;"><em>Assembled physical prototype undergoing initial thermal testing.</em></p>
+</div>

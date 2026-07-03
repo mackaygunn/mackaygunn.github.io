@@ -1,4 +1,4 @@
-<article class="project-card" data-tags="{% for tag in include.project.tags %}{{ tag }} {% endfor %}">
+<article class="project-card {% for cat in include.project.categories %}{{ cat }} {% endfor %}" data-tags="{% for tag in include.project.tags %}{{ tag }} {% endfor %}">
   <a href="{{ include.project.url | relative_url }}" class="project-card-link">
     {% if include.project.thumbnail %}
     <div class="project-card-image">

@@ -9,13 +9,9 @@ title: Home
     <div class="section-header">
       <h2 class="section-title">Selected Works</h2>
       <div class="filter-controls" id="filter-controls">
-        <button class="filter-btn active" data-filter="all">All</button>
-        {% assign all_tags = site.projects | map: 'tags' | join: ',' | split: ',' | uniq | sort %}
-        {% for tag in all_tags %}
-          {% if tag != "" %}
-          <button class="filter-btn" data-filter="{{ tag | strip }}">{{ tag | strip }}</button>
-          {% endif %}
-        {% endfor %}
+        <button class="filter-btn active" data-filter="*">All</button>
+        <button class="filter-btn" data-filter=".design-simulation">Design & Simulation</button>
+        <button class="filter-btn" data-filter=".physical-projects">Physical Projects</button>
       </div>
     </div>
 

@@ -42,11 +42,11 @@ document.addEventListener('DOMContentLoaded', () => {
       const filterValue = btn.getAttribute('data-filter');
 
       projectCards.forEach(card => {
-        if (filterValue === 'all') {
+        if (filterValue === 'all' || filterValue === '*') {
           card.style.display = 'block';
         } else {
-          const cardTags = card.getAttribute('data-tags');
-          if (cardTags && cardTags.includes(filterValue)) {
+          const filterClass = filterValue.startsWith('.') ? filterValue.substring(1) : filterValue;
+          if (card.classList.contains(filterClass) || (card.getAttribute('data-tags') && card.getAttribute('data-tags').includes(filterValue))) {
             card.style.display = 'block';
           } else {
             card.style.display = 'none';
