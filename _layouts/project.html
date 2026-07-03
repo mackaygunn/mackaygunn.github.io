@@ -5,7 +5,11 @@ layout: default
   <header class="project-header">
     <h1 class="project-title">{{ page.title | escape }}</h1>
     <div class="project-meta">
-      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
+      {% if page.duration %}
+        <span class="project-duration">{{ page.duration | escape }}</span>
+      {% else %}
+        <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
+      {% endif %}
     </div>
     {% if page.tags %}
     <div class="project-tags">
