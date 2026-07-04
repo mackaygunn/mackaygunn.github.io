@@ -58,25 +58,25 @@ title: Contact
       
       <!-- Right Form Panel -->
       <div class="contact-form-panel">
-        <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Form submission connected!');">
+        <form action="https://formspree.io/f/xzdlyjew" method="POST">
           <div class="form-group">
             <label>Name</label>
-            <input type="text" placeholder="John Doe" required>
+            <input type="text" name="name" placeholder="John Doe" required>
           </div>
           
           <div class="form-group">
             <label>Email</label>
-            <input type="email" placeholder="john@example.com" required>
+            <input type="email" name="email" placeholder="john@example.com" required>
           </div>
           
           <div class="form-group">
             <label>Subject</label>
-            <input type="text" placeholder="Project Inquiry" required>
+            <input type="text" name="subject" placeholder="Project Inquiry" required>
           </div>
           
           <div class="form-group">
             <label>Message</label>
-            <textarea placeholder="How can I help you?" rows="5" required></textarea>
+            <textarea name="message" placeholder="How can I help you?" rows="5" required></textarea>
           </div>
           
           <button type="submit" class="btn-send">
