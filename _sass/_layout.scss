@@ -22,46 +22,38 @@
   }
 
   .site-nav {
-    .nav-trigger {
-      display: none;
-    }
-    .menu-icon {
-      display: none;
-    }
+    display: flex;
+    align-items: center;
+    gap: $spacing-lg;
 
-    .trigger {
+    .nav-links {
       display: flex;
-      align-items: center;
       gap: $spacing-md;
+      
+      .page-link {
+        color: var(--text-secondary);
+        font-weight: 500;
+        text-decoration: none;
+        padding-bottom: 4px;
+        border-bottom: 2px solid transparent;
+        transition: color 0.2s, border-color 0.2s;
+        
+        &:hover {
+          color: var(--text-color);
+        }
+        
+        &.active {
+          color: var(--accent-color);
+          border-bottom: 2px solid var(--accent-orange);
+        }
+      }
     }
   }
 
   @media screen and (max-width: $breakpoint-md) {
     .site-nav {
-      position: relative;
-      
-      .menu-icon {
-        display: block;
-        cursor: pointer;
-        svg { fill: var(--text-color); }
-      }
-
-      .trigger {
-        display: none;
-        position: absolute;
-        top: 100%;
-        right: 0;
-        background: var(--bg-color);
-        border: 1px solid var(--border-color);
-        padding: $spacing-md;
-        border-radius: 4px;
-        flex-direction: column;
-        min-width: 150px;
-        z-index: 10;
-      }
-
-      .nav-trigger:checked ~ .trigger {
-        display: flex;
+      .nav-links {
+        display: none; // For simplicity in this iteration, we'll hide on mobile, or we could add a hamburger back later
       }
     }
   }

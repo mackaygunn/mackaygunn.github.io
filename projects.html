@@ -1,0 +1,23 @@
+---
+layout: default
+title: Projects
+---
+<section id="projects" class="projects-section" style="padding: 4rem 0;">
+  <div class="wrapper">
+    <div class="section-header">
+      <h2 class="section-title">My Projects</h2>
+      <div class="filter-controls" id="filter-controls">
+        <button class="filter-btn active" data-filter="*">All</button>
+        <button class="filter-btn" data-filter=".design-simulation">Design & Simulation</button>
+        <button class="filter-btn" data-filter=".physical-projects">Physical Projects</button>
+      </div>
+    </div>
+
+    <div class="projects-grid" id="projects-grid">
+      {% assign sorted_projects = site.projects | sort: 'date' | reverse %}
+      {% for project in sorted_projects %}
+        {% include project-card.html project=project %}
+      {% endfor %}
+    </div>
+  </div>
+</section>

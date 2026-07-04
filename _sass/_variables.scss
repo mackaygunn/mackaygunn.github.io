@@ -10,6 +10,7 @@ $font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Robot
   --accent-color: #0369a1; /* Deep Engineering Blue */
   --accent-hover: #0284c7;
   --border-color: #e5e7eb;
+  --accent-orange: #ea580c; /* Orange accent */
 }
 
 // Colors - Dark Mode
@@ -21,6 +22,7 @@ $font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Robot
   --accent-color: #38bdf8; /* Lighter Blue for Dark Mode */
   --accent-hover: #7dd3fc;
   --border-color: #374151;
+  --accent-orange: #f97316; /* Bright orange for dark mode */
 }
 
 // Spacing
