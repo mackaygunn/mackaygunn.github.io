@@ -154,24 +154,32 @@ def main():
         with open(json_path, 'r', encoding='utf-8') as f:
             try:
                 data = json.load(f)
-                md_content, filename, updated_data = build_markdown(data)
                 
-                # Delete any old markdown files for this project to prevent duplicates
-                folder = updated_data.get("project_folder", "")
-                if folder:
-                    old_files = glob.glob(os.path.join(projects_dir, f"*-{folder}.md"))
-                    for old in old_files:
-                        os.remove(old)
-                
-                filepath = os.path.join(projects_dir, filename)
-                with open(filepath, 'w', encoding='utf-8') as out_f:
-                    out_f.write(md_content)
+                # If JSON is a list of projects, process each one
+                if isinstance(data, list):
+                    projects = data
+                else:
+                    projects = [data]
+                    
+                for proj_data in projects:
+                    md_content, filename, updated_data = build_markdown(proj_data)
+                    
+                    # Delete any old markdown files for this project to prevent duplicates
+                    folder = updated_data.get("project_folder", "")
+                    if folder:
+                        old_files = glob.glob(os.path.join(projects_dir, f"*-{folder}.md"))
+                        for old in old_files:
+                            os.remove(old)
+                    
+                    filepath = os.path.join(projects_dir, filename)
+                    with open(filepath, 'w', encoding='utf-8') as out_f:
+                        out_f.write(md_content)
+                        
+                    print(f" -> Generated: {filename}")
                     
                 # Save the JSON back in case the date was updated from "TODAY"
                 with open(json_path, 'w', encoding='utf-8') as json_out:
-                    json.dump(updated_data, json_out, indent=2)
-                    
-                print(f" -> Generated: {filename}")
+                    json.dump(data, json_out, indent=2)
                 
             except json.JSONDecodeError as e:
                 print(f"Error parsing JSON in {json_path}: {e}")
