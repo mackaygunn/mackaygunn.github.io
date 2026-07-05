@@ -9,6 +9,7 @@
       <div class="nav-links">
         <a class="page-link {% if page.url == '/' %}active{% endif %}" href="{{ '/' | relative_url }}">Home</a>
         <a class="page-link {% if page.url contains '/projects' %}active{% endif %}" href="{{ '/projects.html' | relative_url }}">Projects</a>
+        <a class="page-link {% if page.url contains '/cad-gallery' %}active{% endif %}" href="{{ '/cad-gallery/' | relative_url }}">CAD Gallery</a>
         <a class="page-link {% if page.url contains '/experience' %}active{% endif %}" href="{{ '/experience.html' | relative_url }}">Experience</a>
         <a class="page-link {% if page.url contains '/certifications' %}active{% endif %}" href="{{ '/certifications.html' | relative_url }}">Certifications</a>
         <a class="page-link {% if page.url contains '/contact' %}active{% endif %}" href="{{ '/contact.html' | relative_url }}">Contact</a>
