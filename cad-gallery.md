@@ -70,8 +70,10 @@ permalink: /cad-gallery/
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">
       {% for work in site.data.technical_works %}
       <div class="project-card {{ work.software | downcase }}" style="border: 1px solid var(--border-color, #333); border-radius: 6px; overflow: hidden; background: var(--card-bg, #1e1e1e); display: flex; flex-direction: column;">
-        <div style="height: 220px; background: var(--bg-color, #121212); display: flex; align-items: center; justify-content: center; border-bottom: 1px solid var(--border-color, #333); overflow: hidden;">
-          <img src="{{ work.image_path | relative_url }}" alt="{{ work.title }}" style="width: 100%; height: 100%; object-fit: cover;">
+        <div style="height: 220px; background: var(--bg-color, #121212); display: flex; align-items: center; justify-content: center; border-bottom: 1px solid var(--border-color, #333); overflow: hidden; padding: 0.5rem;">
+          <a href="{{ work.image_path | relative_url }}" target="_blank" style="display: flex; align-items: center; justify-content: center; width: 100%; height: 100%;" title="Click to view full size">
+            <img src="{{ work.image_path | relative_url }}" alt="{{ work.title }}" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 4px;">
+          </a>
         </div>
         
         <div style="padding: 1.5rem; flex-grow: 1; display: flex; flex-direction: column;">
