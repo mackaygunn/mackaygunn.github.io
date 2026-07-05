@@ -2,6 +2,7 @@
 layout: project
 title: "Structural Steel Fusion: Single V Butt Joint"
 date: 2026-03-10
+permalink: "/projects/arc-welding-butt-joint/"
 categories: ["manufacturing", "metallurgical-joining"]
 tags: ["Arc Welding", "SMAW", "Steel Fabrication"]
 duration: "Year 1 Semester 2"

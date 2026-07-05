@@ -2,6 +2,7 @@
 layout: project
 title: "Sustainable Vertical Micro-Garden for Urban Housing"
 date: 2025-09-12
+permalink: "/projects/urban-vertical-garden/"
 categories: ["sustainable-engineering", "urban-design"]
 tags: ["Sustainability", "Urban Agriculture", "System Design"]
 duration: "June 2025 - October 2025"

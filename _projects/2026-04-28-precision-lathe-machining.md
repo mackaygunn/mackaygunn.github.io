@@ -2,6 +2,7 @@
 layout: project
 title: "Precision Component Machining via Engine Lathe"
 date: 2026-04-28
+permalink: "/projects/precision-lathe-machining/"
 categories: ["manufacturing", "machining"]
 tags: ["Lathe", "Subtractive Manufacturing", "Mild Steel"]
 duration: "Year 1 Semester 2"

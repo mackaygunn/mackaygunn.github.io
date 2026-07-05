@@ -2,14 +2,15 @@
 layout: project
 title: "ASD Speech Recognition Acoustic Analysis & Feature Engineering"
 date: February 2026
+permalink: "/projects/asd-speech-acoustic-analysis/"
 categories: ["machine-learning", "data-engineering", "healthcare-research"]
 tags: ["Python", "Scikit-Learn", "Data Pipeline", "Feature Engineering", "Matplotlib"]
 duration: "December 2025 - February 2026 (3 Months)"
-image: "/assets/images/projects/asd-speech-acoustic-analysis/cover.png"
-thumbnail: "/assets/images/projects/asd-speech-acoustic-analysis/cover.png"
+image: "/assets/images/projects/asd-speech-acoustic-analysis/cover.jpg"
+thumbnail: "/assets/images/projects/asd-speech-acoustic-analysis/cover.jpg"
 ---
 
-<img src="{{ '/assets/images/projects/asd-speech-acoustic-analysis/cover.png' | relative_url }}" alt="Project Cover" style="width: 250px; height: auto; display: block; margin: 0 auto 2rem auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+<img src="{{ '/assets/images/projects/asd-speech-acoustic-analysis/cover.jpg' | relative_url }}" alt="Project Cover" style="width: 250px; height: auto; display: block; margin: 0 auto 2rem auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
 
 ## Overview
 **Project Type:** Machine Learning Research<br>

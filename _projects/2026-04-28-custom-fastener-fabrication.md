@@ -2,6 +2,7 @@
 layout: project
 title: "Custom M8 Fastener Fabrication & Joint Assembly"
 date: 2026-04-28
+permalink: "/projects/custom-fastener-fabrication/"
 categories: ["manufacturing", "fabrication"]
 tags: ["Threading", "Tap and Die", "Mechanical Assembly"]
 duration: "Year 1 Semester 2"

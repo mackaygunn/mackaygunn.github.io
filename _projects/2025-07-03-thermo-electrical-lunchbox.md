@@ -2,6 +2,7 @@
 layout: project
 title: "Smart Thermo-Electrical Lunchbox"
 date: 2025-07-03
+permalink: "/projects/thermo-electrical-lunchbox/"
 categories: ["physical-projects", "product-design", "thermodynamics"]
 tags: ["CAD", "Arduino", "PTC Heater", "Thermal Control"]
 duration: "June 2025 - October 2025"

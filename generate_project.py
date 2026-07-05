@@ -36,6 +36,7 @@ def build_markdown(data):
 layout: project
 title: "{title}"
 date: {date}
+permalink: "/projects/{folder}/"
 categories: {json.dumps(categories)}
 tags: {json.dumps(tags)}
 duration: "{duration}"
