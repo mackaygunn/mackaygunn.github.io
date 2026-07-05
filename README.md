@@ -1,66 +1,70 @@
-# Automated Portfolio Project Generator
+# Engineering Portfolio Automation Guide
 
-This repository features a custom Python automation script that completely eliminates the need to write Markdown or handle HTML/Liquid tags. 
+Welcome to your automated portfolio! I have designed this codebase to completely separate **Data** from **Design**. This means you never have to write HTML or CSS again. 
 
-To add or update a project on the portfolio, follow this simple 3-step guide:
+When you want to add new projects or CAD drawings, you simply fill out a JSON template, drop in your images, and the system automatically generates the beautiful webpages for you.
 
----
-
-## 1. Create the Project Data File
-All project data is permanently stored in the **`_project_data`** folder. 
-
-**To add a new project:**
-1. Navigate to the `_project_data` folder.
-2. Duplicate the `template.json` file and rename it to your project name (e.g., `drone-arm.json`).
-3. Open the file and fill in your project details.
-
-**Important Rule:** The `project_folder` field in your JSON file is critical. It determines the URL of the project and where the Python script looks for your images. (e.g., `"project_folder": "my-drone-project"`).
-
-**Pro-Tip (Auto-Sorting):** The `template.json` file has `"date": "TODAY"`. If you leave it as `"TODAY"`, the script will automatically assign today's exact date to the project when you run it, guaranteeing your brand new project appears at the very top of your homepage! If you ever want to bump an older project back to the top of the homepage, just change its date back to `"TODAY"` and re-run the script.
+There are **two** distinct systems in this portfolio:
+1. **The Main Projects Page** (In-depth engineering case studies)
+2. **The CAD Gallery** (Quick-view grid of technical drawings)
 
 ---
 
-## 2. Prepare Your Images
-You must place all images for your project in the exact folder specified by the `project_folder` JSON field.
-*Example Path:* `assets/images/projects/my-drone-project/`
+## 1. How to Upload a Main Project
 
-### Image Naming Rules:
-The Python script is designed to automatically detect and format images based purely on their filenames:
+The Main Projects Page (`/projects`) is for full engineering case studies. The system automatically creates a dedicated webpage for the project based on a JSON file.
 
-1. **The Cover Image**
-   * **Name it:** `cover.jpg`
-   * **Result:** The script automatically applies this as the small project card thumbnail on the homepage, and as the large hero image at the top of the project page. *(Must be a .jpg)*
+**Step 1: Prepare your Images**
+1. Create a new folder inside `assets/images/projects/` named after your project (e.g., `my-new-drone`).
+2. Inside that folder, save your main cover image as `cover.jpg` (or `cover.png`).
+3. Add any other diagrams or CAD images you want to show on the project page into this folder.
 
-2. **CAD Gallery Images**
-   * **Name them:** Start the filename with `cad` (e.g., `cad-1.jpg`, `cad-front.png`, `cad_assembly.webp`).
-   * **Result:** The script automatically scoops up all files starting with "cad", sorts them alphabetically, and builds a small CAD component CSS grid gallery. You **do not** need to type these names into your JSON file!
+**Step 2: Fill out the Data**
+1. Go to the `_project_data/` folder.
+2. Copy the `template.json` file and rename it to your project name (e.g., `my-new-drone.json`).
+3. Open your new JSON file and fill in the text fields (title, overview, problem statement, etc.).
+4. *Important:* Make sure the `"project_folder"` field exactly matches the folder name you created in Step 1 (e.g., `"my-new-drone"`).
 
-3. **All Other Images (Diagrams, Prototypes, Results)**
-   * **Name them:** Anything you want (e.g., `circuit.jpg`, `final-prototype.png`).
-   * **Result:** Because these images require custom captions, they are the **only** images you must explicitly list inside the `"diagrams"` array in your JSON file.
-   ```json
-   "diagrams": [
-     {
-       "file": "final-prototype.png",
-       "caption": "The completed physical build."
-     }
-   ]
-   ```
-
----
-
-## 3. Generate and Publish!
-Once your JSON file is filled out and your images are in the correct folder, you are ready to publish!
-
-1. Open your terminal (PowerShell, Command Prompt, or VS Code Terminal) in the root of the repository.
-2. Run the generator script:
+**Step 3: Publish to GitHub!**
+1. Open your terminal or command prompt.
+2. Run this single command:
    ```bash
    python generate_project.py
    ```
+3. **You're done!** The Python script will automatically generate the HTML webpage and instantly push your changes to GitHub. Your new project will be live in 30 seconds.
 
-**The script will automatically:**
-* Scan the `_project_data` folder and read all JSON files.
-* Format the complex Industry-Standard Markdown layouts (Overview, Problem Statement, Technical Details, etc.).
-* Build the responsive CSS image grids.
-* Save the finalized files into the `_projects` folder.
-* **Run `git add`, `git commit`, and `git push` to instantly publish the site to GitHub Pages!**
+---
+
+## 2. How to Upload a CAD Drawing (Gallery)
+
+The CAD Gallery (`/cad-gallery/`) is a quick-view grid. It does not create separate pages; it just adds a new card to the existing grid.
+
+**Step 1: Save the Image**
+1. Export your drawing from AutoCAD, SolidWorks, or MATLAB.
+2. Save the image directly into the `assets/images/projects/cad/` folder (or `matlab/`, etc.). 
+
+**Step 2: Add the Data**
+1. Open the `_data/technical_works.json` file.
+2. Paste a new JSON block at the very top of the file. It should look like this:
+   ```json
+   {
+     "title": "My New Suspension System",
+     "software": "SolidWorks",
+     "image_path": "/assets/images/projects/cad/suspension-drawing.jpg",
+     "engineering_intent": "Designed a double-wishbone suspension...",
+     "technical_skills": ["FEA", "Kinematics", "Assemblies"]
+   }
+   ```
+   *(Note: `engineering_intent` and `technical_skills` are completely optional! If you leave them out, the card will automatically shrink into a clean, image-only card).*
+
+**Step 3: Publish to GitHub!**
+1. You can either use standard Git commands (`git add .`, `git commit`, `git push`)...
+2. **OR** you can just run `python generate_project.py`! Even if you didn't add a main project, the python script will automatically commit and push your CAD Gallery changes to the internet for you.
+
+---
+
+## Troubleshooting
+
+* **My images are broken (404 Error):** Double check that the file name in your JSON exactly matches the file name in your `assets/` folder (watch out for `.jpg` vs `.png`!).
+* **My site didn't update:** GitHub Pages takes about 30–60 seconds to build. Wait a minute, then do a "Hard Refresh" on your browser (`Ctrl + F5` on Windows, or `Cmd + Shift + R` on Mac).
+* **Syntax Error:** JSON is very strict about commas. Make sure every line (except the last one in a block) ends with a comma `,`.
