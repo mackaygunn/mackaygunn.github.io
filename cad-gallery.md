@@ -42,7 +42,7 @@ permalink: /cad-gallery/
   }
   .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 1.5rem;
   }
   
@@ -115,7 +115,7 @@ permalink: /cad-gallery/
     <div class="gallery-grid">
       {% for work in site.data.technical_works %}
       <div class="project-card {{ work.software | downcase }}" style="border: 1px solid var(--border-color, #333); border-radius: 6px; overflow: hidden; background: var(--card-bg, #1e1e1e); display: flex; flex-direction: column;">
-        <div style="height: 180px; background: var(--bg-color, #121212); display: flex; align-items: center; justify-content: center; border-bottom: 1px solid var(--border-color, #333); overflow: hidden; padding: 0.5rem;">
+        <div style="height: 240px; background: var(--bg-color, #121212); display: flex; align-items: center; justify-content: center; border-bottom: 1px solid var(--border-color, #333); overflow: hidden; padding: 0.5rem;">
           <a href="{{ work.image_path | relative_url }}" onclick="openLightbox('{{ work.image_path | relative_url }}'); return false;" style="display: flex; align-items: center; justify-content: center; width: 100%; height: 100%;" title="Click to view full size">
             <img src="{{ work.image_path | relative_url }}" alt="{{ work.title }}" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 4px;">
           </a>
