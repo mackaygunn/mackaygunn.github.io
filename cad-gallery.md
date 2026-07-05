@@ -14,25 +14,25 @@ permalink: /cad-gallery/
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">
   {% for work in site.data.technical_works %}
-  <div class="project-card {{ work.software | downcase }}" style="border: 1px solid #eaeaea; border-radius: 6px; overflow: hidden; background: #fff; display: flex; flex-direction: column;">
-    <div style="height: 220px; background: #f4f4f5; display: flex; align-items: center; justify-content: center; border-bottom: 1px solid #eaeaea; overflow: hidden;">
+  <div class="project-card {{ work.software | downcase }}" style="border: 1px solid var(--border-color, #333); border-radius: 6px; overflow: hidden; background: var(--card-bg, #1e1e1e); display: flex; flex-direction: column;">
+    <div style="height: 220px; background: var(--bg-color, #121212); display: flex; align-items: center; justify-content: center; border-bottom: 1px solid var(--border-color, #333); overflow: hidden;">
       <img src="{{ work.image_path | relative_url }}" alt="{{ work.title }}" style="width: 100%; height: 100%; object-fit: cover;">
     </div>
     
     <div style="padding: 1.5rem; flex-grow: 1; display: flex; flex-direction: column;">
       <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.5rem;">
-        <h3 style="margin: 0; font-size: 1.2rem; color: #111;">{{ work.title }}</h3>
-        <span style="background: #e1effe; color: #1e429f; font-size: 0.75rem; font-weight: bold; padding: 3px 8px; border-radius: 4px;">{{ work.software }}</span>
+        <h3 style="margin: 0; font-size: 1.2rem; color: var(--text-color, #fff);">{{ work.title }}</h3>
+        <span style="background: rgba(30, 66, 159, 0.3); color: #8bb4f7; font-size: 0.75rem; font-weight: bold; padding: 3px 8px; border-radius: 4px;">{{ work.software }}</span>
       </div>
       
       {% if work.engineering_intent %}
-      <p style="color: #555; font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem; flex-grow: 1;">{{ work.engineering_intent }}</p>
+      <p style="color: var(--text-muted, #aaa); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem; flex-grow: 1;">{{ work.engineering_intent }}</p>
       {% endif %}
       
       {% if work.technical_skills %}
       <div style="display: flex; flex-wrap: wrap; gap: 6px; margin-top: auto;">
         {% for skill in work.technical_skills %}
-          <span style="background: #f3f4f6; color: #374151; font-size: 0.8rem; padding: 4px 10px; border-radius: 12px; border: 1px solid #e5e7eb;">{{ skill }}</span>
+          <span style="background: rgba(255,255,255,0.1); color: var(--text-muted, #ddd); font-size: 0.8rem; padding: 4px 10px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.2);">{{ skill }}</span>
         {% endfor %}
       </div>
       {% endif %}
