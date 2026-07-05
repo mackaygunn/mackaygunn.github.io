@@ -10,13 +10,16 @@ permalink: /cad-gallery/
     gap: 2.5rem;
     align-items: flex-start;
     flex-wrap: wrap;
-    margin-top: 1rem;
+    margin-top: 2rem;
+    
+    /* Break out of the centered wrapper to take up the full screen width */
+    width: 94vw;
+    margin-left: calc(-47vw + 50%);
   }
   .sidebar-filters {
     flex: 0 0 220px;
     position: sticky;
     top: 100px;
-    margin-left: -3rem; /* Push further to the left corner */
   }
   .sidebar-filters .filter-controls {
     display: flex;
