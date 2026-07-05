@@ -74,11 +74,11 @@ I learned how to critically evaluate machine learning feature importance not jus
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-bottom: 2rem; text-align: center;">
   <div>
-    <img src="{{ '/assets/images/projects/asd-speech-acoustic-analysis/' | relative_url }}" alt="Diagram" style="width: 100%; border-radius: 6px; border: 1px solid #ddd; margin-bottom: 5px;">
+    <img src="{{ '/assets/images/projects/asd-speech-acoustic-analysis/clinical_feature_comparison.png' | relative_url }}" alt="Diagram" style="width: 100%; border-radius: 6px; border: 1px solid #ddd; margin-bottom: 5px;">
     <p style="font-size: 0.85em; color: #666; line-height: 1.4;"><em>Grouped bar chart with error bars demonstrating clinically valid feature separation between Typical and Atypical utterances.</em></p>
   </div>
   <div>
-    <img src="{{ '/assets/images/projects/asd-speech-acoustic-analysis/' | relative_url }}" alt="Diagram" style="width: 100%; border-radius: 6px; border: 1px solid #ddd; margin-bottom: 5px;">
+    <img src="{{ '/assets/images/projects/asd-speech-acoustic-analysis/feature_comparison_boxplot.png' | relative_url }}" alt="Diagram" style="width: 100%; border-radius: 6px; border: 1px solid #ddd; margin-bottom: 5px;">
     <p style="font-size: 0.85em; color: #666; line-height: 1.4;"><em>Boxplot visual proving the statistical overlap and variance of the isolated acoustic features.</em></p>
   </div>
 </div>

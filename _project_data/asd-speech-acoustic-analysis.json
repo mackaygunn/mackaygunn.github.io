@@ -52,11 +52,11 @@
   "github_link": "https://github.com/mackaygunn/Python-Projects/tree/4fae5c71438d80b2d04a29012273faf26cb23db3/ASD%20speech%20analysis",
   "diagrams": [
     {
-      "file_name": "clinical_feature_comparison.png",
+      "file": "clinical_feature_comparison.png",
       "caption": "Grouped bar chart with error bars demonstrating clinically valid feature separation between Typical and Atypical utterances."
     },
     {
-      "file_name": "feature_comparison_boxplot.png",
+      "file": "feature_comparison_boxplot.png",
       "caption": "Boxplot visual proving the statistical overlap and variance of the isolated acoustic features."
     }
   ]
