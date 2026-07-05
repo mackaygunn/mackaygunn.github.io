@@ -4,20 +4,35 @@
     "software": "AutoCAD",
     "image_path": "/assets/images/projects/cad/weld-drawing.jpg",
     "engineering_intent": "Drafted 2D manufacturing drawing for a V-butt welded joint. Applied specific weld symbols and geometric tolerances to account for thermal distortion during fabrication.",
-    "technical_skills": ["GD&T", "Weld Symbols", "DFM"]
+    "technical_skills": [
+      "GD&T",
+      "Weld Symbols",
+      "DFM"
+    ],
+    "date": "2026-07-05"
   },
   {
     "title": "Four-Bar Chain Kinematics",
     "software": "SolidWorks",
     "image_path": "/assets/images/projects/cad/four-bar-linkage.jpg",
     "engineering_intent": "Defined precise kinematic mates to simulate full range of motion. Analyzed the linkage path to prevent physical interference during cyclic loading.",
-    "technical_skills": ["Parametric Modeling", "Kinematic Simulation", "Assemblies"]
+    "technical_skills": [
+      "Parametric Modeling",
+      "Kinematic Simulation",
+      "Assemblies"
+    ],
+    "date": "2026-07-05"
   },
   {
     "title": "Thermal Heat Flux Analysis",
     "software": "MATLAB",
     "image_path": "/assets/images/projects/matlab/heat-flux-plot.jpg",
     "engineering_intent": "Developed a custom script to plot the transient heat transfer of a Peltier module. Utilized matrix operations to model thermal resistance across multiple boundary layers.",
-    "technical_skills": ["Data Visualization", "Matrix Operations", "Thermodynamics"]
+    "technical_skills": [
+      "Data Visualization",
+      "Matrix Operations",
+      "Thermodynamics"
+    ],
+    "date": "2026-07-05"
   }
 ]

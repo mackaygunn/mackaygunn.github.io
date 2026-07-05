@@ -1,23 +1,79 @@
 [
   {
-    "title": "V-Butt Weld Fabrication Drawing",
+    "title": "Heavy-Duty Crane Hook",
     "software": "AutoCAD",
-    "image_path": "/assets/images/projects/cad/weld-drawing.jpg",
-    "engineering_intent": "Drafted 2D manufacturing drawing for a V-butt welded joint. Applied specific weld symbols and geometric tolerances to account for thermal distortion during fabrication.",
-    "technical_skills": ["GD&T", "Weld Symbols", "DFM"]
+    "image_path": "/assets/images/projects/cad/Drawings_page-0014.png",
+    "engineering_intent": "Drafted a load-bearing crane hook with a threaded mounting shank. Emphasized the precise construction of intersecting radii (R47/R35) critical for safe structural load distribution.",
+    "technical_skills": ["Radii Construction", "Load Path Geometry", "Orthographic Projection"]
   },
   {
-    "title": "Four-Bar Chain Kinematics",
-    "software": "SolidWorks",
-    "image_path": "/assets/images/projects/cad/four-bar-linkage.jpg",
-    "engineering_intent": "Defined precise kinematic mates to simulate full range of motion. Analyzed the linkage path to prevent physical interference during cyclic loading.",
-    "technical_skills": ["Parametric Modeling", "Kinematic Simulation", "Assemblies"]
+    "title": "Standard Spur Gear Profile",
+    "software": "AutoCAD",
+    "image_path": "/assets/images/projects/cad/Drawings_page-0011.jpg",
+    "engineering_intent": "Constructed an involute spur gear profile for a 26-tooth gear. Calculated and drafted the specific pitch circle diameter, root circle, and addendum angles according to standard gear modules.",
+    "technical_skills": ["Gear Geometry", "Involute Curves", "Pitch Calculations"]
   },
   {
-    "title": "Thermal Heat Flux Analysis",
-    "software": "MATLAB",
-    "image_path": "/assets/images/projects/matlab/heat-flux-plot.jpg",
-    "engineering_intent": "Developed a custom script to plot the transient heat transfer of a Peltier module. Utilized matrix operations to model thermal resistance across multiple boundary layers.",
-    "technical_skills": ["Data Visualization", "Matrix Operations", "Thermodynamics"]
+    "title": "Radial Impeller Profile",
+    "software": "AutoCAD",
+    "image_path": "/assets/images/projects/cad/Drawings_page-0012.jpg",
+    "engineering_intent": "Detailed the blade sweep and hub geometry for a radial fluid impeller. Utilized polar arrays for uniform blade distribution and defined complex tangential boundary radii.",
+    "technical_skills": ["Fluid Mechanics Profiles", "Radial Arrays", "Complex Tangency"]
+  },
+  {
+    "title": "Geneva Drive Indexing Wheel",
+    "software": "AutoCAD",
+    "image_path": "/assets/images/projects/cad/Drawings_page-0010.jpg",
+    "engineering_intent": "Engineered the 2D profile for a 6-slot Geneva mechanism. Specified internal pitch circle diameters (PCD) and precise slot geometry for intermittent rotational motion.",
+    "technical_skills": ["Intermittent Motion", "Bolt Circle Layout", "Slot Geometry"]
+  },
+  {
+    "title": "Connecting Rod Orthographics",
+    "software": "AutoCAD",
+    "image_path": "/assets/images/projects/cad/Drawings_page-0005.jpg",
+    "engineering_intent": "Generated multi-view orthographic projections of a connecting rod. Included a cross-sectional view to specify material web thickness and primary bore diameters.",
+    "technical_skills": ["Orthographic Projection", "Cross-Sectional Views", "Bore Tolerancing"]
+  },
+  {
+    "title": "Belt & Pulley Kinematic Layout",
+    "software": "AutoCAD",
+    "image_path": "/assets/images/projects/cad/Drawings_page-0009.jpg",
+    "engineering_intent": "Drafted the 2D pitch line layout for a three-point pulley system. Calculated and applied continuous tangent lines across varying radial hubs for power transmission.",
+    "technical_skills": ["Tangential Constraints", "Pitch Layout", "Power Transmission Geometry"]
+  },
+  {
+    "title": "Cross-Hub Mounting Plate",
+    "software": "AutoCAD",
+    "image_path": "/assets/images/projects/cad/Drawings_page-0008.jpg",
+    "engineering_intent": "Detailed a symmetric four-point cross hub. Utilized polar coordinate dimensioning and precise angular spacing for rotational balance.",
+    "technical_skills": ["Polar Dimensioning", "Symmetric Distribution", "Hub Design"]
+  },
+  {
+    "title": "Angled Lever Arm",
+    "software": "AutoCAD",
+    "image_path": "/assets/images/projects/cad/Drawings_page-0003.jpg",
+    "engineering_intent": "Drafted an angled mechanical lever utilizing parallel elliptical boundaries. Applied specific corner radii to mitigate stress concentration at the fulcrum.",
+    "technical_skills": ["Parallel Offsets", "Angular Constraints", "Stress Mitigation"]
+  },
+  {
+    "title": "Mechanical Linkage Profile",
+    "software": "AutoCAD",
+    "image_path": "/assets/images/projects/cad/Drawings_page-0001.jpg",
+    "engineering_intent": "Drafted a planar linkage arm featuring complex tangential arcs, an internal elliptical slot, and a customized polygonal bore.",
+    "technical_skills": ["Tangential Arcs", "Planar Geometry", "Complex Fillets"]
+  },
+  {
+    "title": "Contoured Rotational Profile",
+    "software": "AutoCAD",
+    "image_path": "/assets/images/projects/cad/Drawings_page-0004.jpg",
+    "engineering_intent": "Defined the 2D sweep profile for a contoured shaft, specifying precise transition radii essential for lathe turning operations.",
+    "technical_skills": ["Sweep Profiles", "Transition Radii", "Turning Prep"]
+  },
+  {
+    "title": "Custom Flange Plate",
+    "software": "AutoCAD",
+    "image_path": "/assets/images/projects/cad/Drawings_page-0002.jpg",
+    "engineering_intent": "Constructed a 2D planar profile featuring inscribed polygons and elliptical boundaries with precise coordinate dimensioning.",
+    "technical_skills": ["Inscribed Geometry", "Elliptical Construction", "Coordinate Dimensioning"]
   }
 ]
