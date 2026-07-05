@@ -1,0 +1,142 @@
+[
+  {
+    "project_folder": "asd-speech-recognition",
+    "title": "ASD Speech Acoustic Analysis & Feature Engineering",
+    "date": "July 2026",
+    "categories": [
+      "machine-learning",
+      "data-science",
+      "research"
+    ],
+    "tags": [
+      "Python",
+      "Scikit-Learn",
+      "Matplotlib",
+      "Data Engineering"
+    ],
+    "overview_metadata": {
+      "project_type": "Academic Research",
+      "duration": "1 Semester",
+      "team": "Solo (Supervised by Dr. Nushara)",
+      "my_role": "Machine Learning Researcher / Data Engineer"
+    },
+    "overview_text": "Built a Python data pipeline using the speechocean762 dataset to isolate valid acoustic markers (prosody and fluency) for an ASD speech model while mitigating demographic and language-barrier biases.",
+    "problem_statement": "Existing pronunciation datasets contained severe demographic biases and confounding language-barrier variables that prevented their direct use in clinical Autism Spectrum Disorder detection.",
+    "objectives": [
+      "Neutralize demographic biases via undersampling",
+      "Extract and isolate clinically valid ASD proxies like prosody",
+      "Prove class separation mathematically and visually"
+    ],
+    "engineering_process": "Data Extraction -> Undersampling -> Feature Engineering -> Statistical Variance Analysis -> Visualization",
+    "technical_details": "Engineered a mathematically balanced 1,044-utterance training dataset from 2,500 raw Kaldi-formatted audio logs. Parsed nested JSON structures to extract sentence-level acoustic parameters.",
+    "design_decisions": "Explicitly excluded 'Accuracy' and 'Completeness' scores as they were identified as confounding variables representing second-language proficiency rather than neurodivergence.",
+    "tools_and_software": [
+      "Python",
+      "NumPy",
+      "Matplotlib",
+      "Scikit-Learn"
+    ],
+    "engineering_skills": [
+      "Data Pipeline Architecture",
+      "Statistical Variance Analysis",
+      "Bias Mitigation"
+    ],
+    "challenges": "Preventing data leakage between the balanced training set and the leftover testing set, and proving mathematically that the highest-scoring feature was actually a confounding variable.",
+    "results": "Successfully isolated 1,456 unseen utterances as a pristine testing set and generated automated boxplots proving statistical separation of the typical and atypical classes.",
+    "key_learning": "Learned the critical difference between mathematical performance and scientific validity, specifically how to identify and eliminate confounding variables in clinical datasets.",
+    "diagrams": [
+      {
+        "file": "clinical_feature_comparison.png",
+        "caption": "Statistical Feature Separation Bar Chart"
+      }
+    ]
+  },
+  {
+    "project_folder": "traceability-card-generator",
+    "title": "Automated Traceability Card Generator",
+    "date": "Early 2026",
+    "categories": [
+      "software-automation",
+      "manufacturing-tools"
+    ],
+    "tags": [
+      "Python",
+      "Image Processing",
+      "Automation"
+    ],
+    "overview_metadata": {
+      "project_type": "Software Automation",
+      "duration": "1 Month",
+      "team": "Solo",
+      "my_role": "Lead Developer"
+    },
+    "overview_text": "Developed an automated Python application that generates customized traceability cards with integrated QR codes for manufacturing and inventory tracking.",
+    "problem_statement": "Manually creating individual traceability cards for batch products is time-consuming and prone to human error, requiring an automated batch-generation solution.",
+    "objectives": [
+      "Automate image generation",
+      "Integrate dynamic QR codes",
+      "Process batch data efficiently"
+    ],
+    "engineering_process": "Requirements Gathering -> Logic Design -> Library Integration -> Batch Processing Output",
+    "technical_details": "Utilized the Pillow (PIL) library for dynamic image manipulation and text rendering, alongside QR code generation libraries to embed unique identifiers directly onto the visual cards.",
+    "design_decisions": "Opted for Python and Pillow due to their lightweight nature and extensive support for programmatic image creation without needing heavy GUI software.",
+    "tools_and_software": [
+      "Python",
+      "Pillow (PIL)",
+      "qrcode library"
+    ],
+    "engineering_skills": [
+      "Scripting",
+      "Programmatic Image Processing",
+      "Workflow Automation"
+    ],
+    "challenges": "Ensuring text dynamically fit within the predefined boundaries of the card template without overlapping or clipping.",
+    "results": "Created a pipeline capable of instantly generating hundreds of unique, production-ready traceability cards from a structured data source.",
+    "key_learning": "Mastered programmatic image manipulation and the automated generation of visual assets for industrial tracking use cases.",
+    "diagrams": []
+  },
+  {
+    "project_folder": "c-grade-tracker",
+    "title": "Persistent University Grade Tracker",
+    "date": "Early 2026",
+    "categories": [
+      "software-development",
+      "academic-tools"
+    ],
+    "tags": [
+      "C Programming",
+      "File I/O",
+      "Data Structures"
+    ],
+    "overview_metadata": {
+      "project_type": "Terminal Application",
+      "duration": "3 Weeks",
+      "team": "Solo",
+      "my_role": "Software Engineer"
+    },
+    "overview_text": "Engineered a lightweight, terminal-based University Grade Tracker written in C that utilizes persistent file storage to manage and calculate semester GPAs.",
+    "problem_statement": "Needed a fast, low-overhead tool to track module grades and calculate cumulative GPAs over multiple semesters without relying on heavy external databases or GUI applications.",
+    "objectives": [
+      "Implement persistent data storage",
+      "Calculate accurate GPA metrics",
+      "Create a robust command-line interface"
+    ],
+    "engineering_process": "Struct Definition -> Memory Management -> File I/O Implementation -> CLI Interface",
+    "technical_details": "Leveraged C structures to map out semester and module data. Implemented standard C file I/O operations to ensure data persisted accurately between application executions.",
+    "design_decisions": "Chose a fundamental text/binary file storage approach over an external database to keep the application lightweight, fast, and completely self-contained.",
+    "tools_and_software": [
+      "C",
+      "GCC Compiler",
+      "Terminal"
+    ],
+    "engineering_skills": [
+      "Memory Management",
+      "File Systems",
+      "Terminal CLI Design"
+    ],
+    "challenges": "Handling raw memory pointers and ensuring file streams were properly managed and closed to prevent memory leaks and data corruption.",
+    "results": "Deployed a highly responsive CLI tool that successfully reads, writes, and calculates academic standing with zero data loss between sessions.",
+    "key_learning": "Deepened understanding of low-level memory management, pointers, and direct file manipulation in standard C.",
+    "diagrams": []
+  }
+]

@@ -18,6 +18,7 @@
     "my_role": "Lead Engineer"
   },
   "overview_text": "A brief 2-3 sentence overview of the project.",
+  "github_link": "https://github.com/mackaygunn/your-repo-link",
   "problem_statement": "The problem we were trying to solve...",
   "objectives": [
     "Objective 1",
