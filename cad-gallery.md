@@ -25,13 +25,17 @@ permalink: /cad-gallery/
         <span style="background: #e1effe; color: #1e429f; font-size: 0.75rem; font-weight: bold; padding: 3px 8px; border-radius: 4px;">{{ work.software }}</span>
       </div>
       
+      {% if work.engineering_intent %}
       <p style="color: #555; font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem; flex-grow: 1;">{{ work.engineering_intent }}</p>
+      {% endif %}
       
+      {% if work.technical_skills %}
       <div style="display: flex; flex-wrap: wrap; gap: 6px; margin-top: auto;">
         {% for skill in work.technical_skills %}
           <span style="background: #f3f4f6; color: #374151; font-size: 0.8rem; padding: 4px 10px; border-radius: 12px; border: 1px solid #e5e7eb;">{{ skill }}</span>
         {% endfor %}
       </div>
+      {% endif %}
     </div>
   </div>
   {% endfor %}
