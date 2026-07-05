@@ -16,6 +16,7 @@ permalink: /cad-gallery/
     flex: 0 0 220px;
     position: sticky;
     top: 100px;
+    margin-left: -3rem; /* Push further to the left corner */
   }
   .sidebar-filters .filter-controls {
     display: flex;
@@ -38,7 +39,7 @@ permalink: /cad-gallery/
   }
   .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
   }
   
@@ -81,6 +82,7 @@ permalink: /cad-gallery/
       position: static;
       flex: 1 1 100%;
       margin-bottom: 1rem;
+      margin-left: 0;
     }
     .sidebar-filters .filter-controls {
       flex-direction: row;
