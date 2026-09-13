@@ -212,8 +212,7 @@ title: Experience
       </div>
       
       <div class="timeline-company-container">
-        <!-- Placeholder logo: upload actual logo to assets/images/experience/icc-logo.png -->
-        <img src="https://ui-avatars.com/api/?name=ICC&background=random&color=fff" alt="ICC Logo" class="company-logo">
+        <img src="{{ '/assets/images/experience/icc-logo.png' | relative_url }}" alt="ICC Logo" class="company-logo">
         <h3 class="timeline-company">International Construction Consortium (Pvt) Ltd – Plant & Equipment Div.</h3>
       </div>
       
