@@ -227,10 +227,10 @@ title: Experience
 
       <!-- Experience Image Gallery (Images lazy-loaded and compressed) -->
       <div class="timeline-gallery">
-        <img src="{{ '/assets/images/experience/icc-1.jpg' | relative_url }}" alt="Industry Training Photo 1" loading="lazy">
-        <img src="{{ '/assets/images/experience/icc-2.jpg' | relative_url }}" alt="Industry Training Photo 2" loading="lazy">
-        <img src="{{ '/assets/images/experience/icc-3.jpg' | relative_url }}" alt="Industry Training Photo 3" loading="lazy">
-        <img src="{{ '/assets/images/experience/icc-4.jpg' | relative_url }}" alt="Industry Training Photo 4" loading="lazy">
+        <img src="{{ '/assets/images/experience/icc-1.jpg?v=2' | relative_url }}" alt="Industry Training Photo 1" loading="lazy">
+        <img src="{{ '/assets/images/experience/icc-2.jpg?v=2' | relative_url }}" alt="Industry Training Photo 2" loading="lazy">
+        <img src="{{ '/assets/images/experience/icc-3.jpg?v=2' | relative_url }}" alt="Industry Training Photo 3" loading="lazy">
+        <img src="{{ '/assets/images/experience/icc-4.jpg?v=2' | relative_url }}" alt="Industry Training Photo 4" loading="lazy">
       </div>
 
       <!-- Link hardcoded to expect the PDF in the assets/docs folder -->
