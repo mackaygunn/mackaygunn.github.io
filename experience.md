@@ -114,6 +114,26 @@ permalink: /experience/
     color: #8bb4f7;
   }
 
+  /* Mini Gallery for Experience */
+  .timeline-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .timeline-gallery img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid var(--border-color, #444);
+    transition: transform 0.2s ease;
+  }
+  .timeline-gallery img:hover {
+    transform: scale(1.05);
+  }
+
   @media (max-width: 768px) {
     .timeline {
       padding-left: 1.5rem;
@@ -148,6 +168,14 @@ permalink: /experience/
         <li>Diagnosed and repaired mechanical power transmission systems, including multi-stage spur gear reduction trains and V-belt drives on heavy-duty rebar cutting equipment.</li>
         <li>Managed workshop parts inventory and processed mechanical work orders using Enterprise Resource Planning (ERP) software to strictly track 500-hour preventative maintenance schedules.</li>
       </ul>
+
+      <!-- Experience Image Gallery (Expects images to be uploaded to these paths) -->
+      <div class="timeline-gallery">
+        <img src="{{ '/assets/images/experience/icc-1.jpg' | relative_url }}" alt="Industry Training Photo 1">
+        <img src="{{ '/assets/images/experience/icc-2.jpg' | relative_url }}" alt="Industry Training Photo 2">
+        <img src="{{ '/assets/images/experience/icc-3.jpg' | relative_url }}" alt="Industry Training Photo 3">
+        <img src="{{ '/assets/images/experience/icc-4.jpg' | relative_url }}" alt="Industry Training Photo 4">
+      </div>
 
       <!-- Link hardcoded to expect the PDF in the assets/docs folder -->
       <a href="{{ '/assets/docs/industrial-training-logbook.pdf' | relative_url }}" target="_blank" class="logbook-btn">
