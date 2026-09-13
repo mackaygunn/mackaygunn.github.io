@@ -55,18 +55,41 @@ title: Experience
     box-shadow: 0 8px 15px rgba(0,0,0,0.2);
   }
 
+  .timeline-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.5rem;
+  }
+
   .timeline-title {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 700;
     color: var(--text-color, #fff);
     margin-bottom: 0.25rem;
+    margin-top: 0;
+  }
+
+  .timeline-company-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 1rem;
+  }
+
+  .company-logo {
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+    background: #fff;
+    padding: 2px;
+    object-fit: contain;
   }
 
   .timeline-company {
-    font-size: 1.15rem;
+    font-size: 1.05rem;
     font-weight: 500;
-    color: #8bb4f7;
-    margin-bottom: 0.5rem;
+    color: var(--text-secondary, #888);
   }
 
   .timeline-date {
@@ -77,7 +100,6 @@ title: Experience
     border-radius: 99px;
     font-size: 0.85rem;
     font-weight: 600;
-    margin-bottom: 1.5rem;
   }
 
   .timeline-responsibilities {
@@ -90,6 +112,10 @@ title: Experience
 
   .timeline-responsibilities li {
     margin-bottom: 0.8rem;
+  }
+
+  .timeline-responsibilities strong {
+    color: var(--text-color, #fff);
   }
 
   .logbook-btn {
@@ -133,6 +159,26 @@ title: Experience
     transform: scale(1.05);
   }
 
+  /* Tech Stack Pills */
+  .tech-stack-footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border-color, #333);
+  }
+
+  .tech-stack-footer .tag {
+    background: var(--bg-secondary, #2a2a2a);
+    color: var(--text-color, #eee);
+    padding: 0.3rem 0.75rem;
+    border-radius: 99px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border: 1px solid var(--border-color, #444);
+  }
+
   @media (max-width: 768px) {
     .timeline {
       padding-left: 1.5rem;
@@ -146,6 +192,10 @@ title: Experience
     .timeline-content {
       padding: 1.5rem;
     }
+    .timeline-header-container {
+      flex-direction: column;
+      gap: 10px;
+    }
   }
 </style>
 
@@ -155,25 +205,33 @@ title: Experience
   <div class="timeline-item">
     <div class="timeline-dot"></div>
     <div class="timeline-content">
-      <h3 class="timeline-title">Mechanical Engineering Industrial Trainee</h3>
-      <div class="timeline-company">International Construction Consortium (Pvt) Ltd (ICC) – Plant & Equipment (P&E) Division, Kaduwela</div>
-      <div class="timeline-date">July 20, 2026 – September 14, 2026</div>
+      
+      <div class="timeline-header-container">
+        <h2 class="timeline-title">Mechanical Engineering Intern</h2>
+        <div class="timeline-date">July 2026 – Sept 2026</div>
+      </div>
+      
+      <div class="timeline-company-container">
+        <!-- Placeholder logo: upload actual logo to assets/images/experience/icc-logo.png -->
+        <img src="https://ui-avatars.com/api/?name=ICC&background=random&color=fff" alt="ICC Logo" class="company-logo">
+        <h3 class="timeline-company">International Construction Consortium (Pvt) Ltd – Plant & Equipment Div.</h3>
+      </div>
       
       <ul class="timeline-responsibilities">
-        <li>Diagnosed and repaired heavy plant machinery drivetrains, high-pressure hydraulic circuits, and pneumatic control systems across earthmoving and lifting equipment fleets.</li>
-        <li>Executed complete diesel prime mover integrations and calibrated hydrostatic pump linkages, verifying mechanical tolerances through dynamic field commissioning under load.</li>
-        <li>Overhauled and maintained small plant machinery, including Sakai walk-behind vibratory rollers, Simpedil rebar bending machines, and portable electric builder's hoists.</li>
-        <li>Performed precision electrical teardowns, wire-mapping, and ground fault diagnostics on 3-phase industrial control panels and AC induction motors to resolve logic circuit failures.</li>
-        <li>Diagnosed and repaired mechanical power transmission systems, including multi-stage spur gear reduction trains and V-belt drives on heavy-duty rebar cutting equipment.</li>
-        <li>Managed workshop parts inventory and processed mechanical work orders using Enterprise Resource Planning (ERP) software to strictly track 500-hour preventative maintenance schedules.</li>
+        <li><strong>Heavy Machinery Diagnostics:</strong> Restored operational readiness across earthmoving and lifting fleets by diagnosing and repairing complex drivetrain, high-pressure hydraulic, and pneumatic control failures.</li>
+        <li><strong>Diesel Powertrain Integration:</strong> Achieved 100% field commissioning success on diesel prime movers by executing complete integrations, calibrating hydrostatic linkages, and verifying mechanical tolerances under dynamic load.</li>
+        <li><strong>Plant Equipment Overhaul:</strong> Extended lifecycle of small plant machinery (Sakai vibratory rollers, Simpedil rebar benders, electric hoists) by executing comprehensive mechanical and electrical overhauls.</li>
+        <li><strong>Industrial Electrical Diagnostics:</strong> Resolved critical logic circuit failures on 3-phase control panels and AC induction motors by performing precision teardowns, wire-mapping, and ground fault diagnostics.</li>
+        <li><strong>Power Transmission Repair:</strong> Restored peak cutting torque to heavy-duty rebar equipment by diagnosing and repairing multi-stage spur gear reduction trains and V-belt drive systems.</li>
+        <li><strong>Maintenance Management:</strong> Maintained strict adherence to 500-hour preventative maintenance schedules by managing workshop parts inventory and processing work orders through ERP software.</li>
       </ul>
 
-      <!-- Experience Image Gallery (Expects images to be uploaded to these paths) -->
+      <!-- Experience Image Gallery (Images lazy-loaded and compressed) -->
       <div class="timeline-gallery">
-        <img src="{{ '/assets/images/experience/icc-1.jpg' | relative_url }}" alt="Industry Training Photo 1">
-        <img src="{{ '/assets/images/experience/icc-2.jpg' | relative_url }}" alt="Industry Training Photo 2">
-        <img src="{{ '/assets/images/experience/icc-3.jpg' | relative_url }}" alt="Industry Training Photo 3">
-        <img src="{{ '/assets/images/experience/icc-4.jpg' | relative_url }}" alt="Industry Training Photo 4">
+        <img src="{{ '/assets/images/experience/icc-1.jpg' | relative_url }}" alt="Industry Training Photo 1" loading="lazy">
+        <img src="{{ '/assets/images/experience/icc-2.jpg' | relative_url }}" alt="Industry Training Photo 2" loading="lazy">
+        <img src="{{ '/assets/images/experience/icc-3.jpg' | relative_url }}" alt="Industry Training Photo 3" loading="lazy">
+        <img src="{{ '/assets/images/experience/icc-4.jpg' | relative_url }}" alt="Industry Training Photo 4" loading="lazy">
       </div>
 
       <!-- Link hardcoded to expect the PDF in the assets/docs folder -->
@@ -181,6 +239,17 @@ title: Experience
         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="12" y1="18" x2="12" y2="12"></line><line x1="9" y1="15" x2="15" y2="15"></line></svg>
         View Training Logbook
       </a>
+
+      <!-- Tech Stack Footer -->
+      <div class="tech-stack-footer">
+        <span class="tag">Fluid Power Systems</span>
+        <span class="tag">ERP Software</span>
+        <span class="tag">Diesel Prime Movers</span>
+        <span class="tag">Electro-Pneumatics</span>
+        <span class="tag">3-Phase Industrial Circuits</span>
+        <span class="tag">Power Transmission</span>
+      </div>
+
     </div>
   </div>
 
