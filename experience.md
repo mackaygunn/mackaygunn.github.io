@@ -47,18 +47,41 @@ title: Experience
     border-radius: 8px;
     padding: 2rem;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    cursor: pointer;
   }
   
   .timeline-content:hover {
     transform: translateY(-2px);
     box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+    border-color: #555;
+  }
+
+  .card-details {
+    display: none;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border-color, #333);
+    animation: fadeIn 0.3s ease-in-out;
+  }
+
+  .timeline-content.expanded .card-details {
+    display: block;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-5px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .timeline-content.expanded .expand-icon {
+    transform: rotate(180deg);
   }
 
   .timeline-header-container {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     margin-bottom: 0.5rem;
   }
 
@@ -73,13 +96,12 @@ title: Experience
   .timeline-company-container {
     display: flex;
     align-items: center;
-    gap: 12px;
-    margin-bottom: 1rem;
+    gap: 10px;
   }
 
   .company-logo {
-    width: 32px;
-    height: 32px;
+    width: 24px;
+    height: 24px;
     border-radius: 4px;
     background: #fff;
     padding: 2px;
@@ -89,17 +111,18 @@ title: Experience
   .timeline-company {
     font-size: 1.05rem;
     font-weight: 500;
-    color: var(--text-secondary, #888);
+    color: #a0a0a0;
+    margin: 0;
   }
 
   .timeline-date {
     display: inline-block;
-    background: rgba(255, 255, 255, 0.1);
-    color: var(--text-muted, #aaa);
-    padding: 0.3rem 0.8rem;
+    background: #2a2a2a;
+    color: #b0b0b0;
+    padding: 0.4rem 1rem;
     border-radius: 99px;
-    font-size: 0.85rem;
-    font-weight: 600;
+    font-size: 0.9rem;
+    font-weight: 500;
   }
 
   .timeline-responsibilities {
@@ -204,19 +227,25 @@ title: Experience
   <!-- ICC Plant & Equipment -->
   <div class="timeline-item">
     <div class="timeline-dot"></div>
-    <div class="timeline-content">
+    <div class="timeline-content" onclick="this.classList.toggle('expanded')">
       
-      <div class="timeline-header-container">
-        <h2 class="timeline-title">Mechanical Engineering Intern</h2>
-        <div class="timeline-date">July 2026 – Sept 2026</div>
+      <div class="card-summary">
+        <div class="timeline-header-container">
+          <h2 class="timeline-title">Mechanical Engineering Intern</h2>
+          <div style="display: flex; align-items: center; gap: 1rem;">
+            <div class="timeline-date">July 2026 – Sept 2026</div>
+            <svg class="expand-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--text-secondary, #888)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="transition: transform 0.3s ease;"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </div>
+        </div>
+        
+        <div class="timeline-company-container">
+          <img src="{{ '/assets/images/experience/icc-logo.png' | relative_url }}" alt="ICC Logo" class="company-logo">
+          <h3 class="timeline-company">International Construction Consortium (Pvt) Ltd – Plant & Equipment Div.</h3>
+        </div>
       </div>
       
-      <div class="timeline-company-container">
-        <img src="{{ '/assets/images/experience/icc-logo.png' | relative_url }}" alt="ICC Logo" class="company-logo">
-        <h3 class="timeline-company">International Construction Consortium (Pvt) Ltd – Plant & Equipment Div.</h3>
-      </div>
-      
-      <ul class="timeline-responsibilities">
+      <div class="card-details">
+        <ul class="timeline-responsibilities">
         <li><strong>Heavy Machinery Diagnostics:</strong> Restored operational readiness across earthmoving and lifting fleets by diagnosing and repairing complex drivetrain, high-pressure hydraulic, and pneumatic control failures.</li>
         <li><strong>Diesel Powertrain Integration:</strong> Achieved 100% field commissioning success on diesel prime movers by executing complete integrations, calibrating hydrostatic linkages, and verifying mechanical tolerances under dynamic load.</li>
         <li><strong>Plant Equipment Overhaul:</strong> Extended lifecycle of small plant machinery (Sakai vibratory rollers, Simpedil rebar benders, electric hoists) by executing comprehensive mechanical and electrical overhauls.</li>
@@ -234,7 +263,7 @@ title: Experience
       </div>
 
       <!-- Link hardcoded to expect the PDF in the assets/docs folder -->
-      <a href="{{ '/assets/docs/industrial-training-logbook.pdf' | relative_url }}" target="_blank" class="logbook-btn">
+      <a href="{{ '/assets/docs/industrial-training-logbook.pdf' | relative_url }}" target="_blank" class="logbook-btn" onclick="event.stopPropagation()">
         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="12" y1="18" x2="12" y2="12"></line><line x1="9" y1="15" x2="15" y2="15"></line></svg>
         View Training Logbook
       </a>
@@ -247,6 +276,8 @@ title: Experience
         <span class="tag">Electro-Pneumatics</span>
         <span class="tag">3-Phase Industrial Circuits</span>
         <span class="tag">Power Transmission</span>
+      </div>
+      
       </div>
 
     </div>
