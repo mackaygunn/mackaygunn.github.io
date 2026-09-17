@@ -246,13 +246,11 @@ title: Experience
       
       <div class="card-details">
         <ul class="timeline-responsibilities">
-        <li><strong>Heavy Machinery Diagnostics:</strong> Restored operational readiness across earthmoving and lifting fleets by diagnosing and repairing complex drivetrain, high-pressure hydraulic, and pneumatic control failures.</li>
-        <li><strong>Diesel Powertrain Integration:</strong> Achieved 100% field commissioning success on diesel prime movers by executing complete integrations, calibrating hydrostatic linkages, and verifying mechanical tolerances under dynamic load.</li>
-        <li><strong>Plant Equipment Overhaul:</strong> Extended lifecycle of small plant machinery (Sakai vibratory rollers, Simpedil rebar benders, electric hoists) by executing comprehensive mechanical and electrical overhauls.</li>
-        <li><strong>Industrial Electrical Diagnostics:</strong> Resolved critical logic circuit failures on 3-phase control panels and AC induction motors by performing precision teardowns, wire-mapping, and ground fault diagnostics.</li>
-        <li><strong>Power Transmission Repair:</strong> Restored peak cutting torque to heavy-duty rebar equipment by diagnosing and repairing multi-stage spur gear reduction trains and V-belt drive systems.</li>
-        <li><strong>Maintenance Management:</strong> Maintained strict adherence to 500-hour preventative maintenance schedules by managing workshop parts inventory and processing work orders through ERP software.</li>
-      </ul>
+          <li>Gained structured exposure to a professional industrial environment, measured by documented repair closure across 10+ heavy plant equipment types including crawler cranes, wheel loaders, forklifts, and rebar cutters, by completing an 8-week industrial attachment at a leading Sri Lankan construction company.</li>
+          <li>Restored a ZL30H Wheel Loader to full operational service, measured by return-to-operation sign-off, by executing a complete drivetrain overhaul covering Cummins 6BT engine installation, planetary final drive rebuild, and preventive maintenance checks on the cooling and hydraulic systems.</li>
+          <li>Resolved an active hydraulic leak on a Tadano TR-250 rough terrain crane, measured by leak-free multi-stage boom extension under load, by fault-isolating and repairing the rotary union on the telescopic boom hose reel — demonstrating motivated, hands-on problem-solving in a live industrial environment.</li>
+          <li>Developed hands-on competency across hydraulic fault isolation, pneumatic diagnostics, precision lathe machining, and electronic control panel inspection — applied across diverse heavy plant including cranes, compressors, and generator sets across a fully operational heavy plant workshop.</li>
+        </ul>
 
       <!-- Experience Image Gallery (Images lazy-loaded and compressed) -->
       <div class="timeline-gallery">
