@@ -281,4 +281,81 @@ title: Experience
     </div>
   </div>
 
+  <!-- IESL Student Chapter -->
+  <div class="timeline-item">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content" onclick="this.classList.toggle('expanded')">
+
+      <div class="card-summary">
+        <div class="timeline-header-container">
+          <h2 class="timeline-title">Assistant Secretary</h2>
+          <div style="display: flex; align-items: center; gap: 1rem;">
+            <div class="timeline-date">2026 / 2027</div>
+            <svg class="expand-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--text-secondary, #888)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="transition: transform 0.3s ease;"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </div>
+        </div>
+
+        <div class="timeline-company-container">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-color, #1e429f)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          <h3 class="timeline-company">IESL Student Chapter – SLIIT</h3>
+        </div>
+      </div>
+
+      <div class="card-details">
+        <ul class="timeline-responsibilities">
+          <li>Elected as <strong>Assistant Secretary</strong> for the Institution of Engineers Sri Lanka (IESL) Student Chapter at SLIIT for the academic year 2026/2027, representing the chapter's student body in a formal administrative capacity.</li>
+          <li>Responsible for managing official correspondence, coordinating chapter meetings, maintaining records, and supporting the Secretary in the smooth operation of the student chapter's activities and events.</li>
+        </ul>
+
+        <!-- Tech Stack Footer -->
+        <div class="tech-stack-footer">
+          <span class="tag">Leadership</span>
+          <span class="tag">Administration</span>
+          <span class="tag">Event Coordination</span>
+          <span class="tag">IESL</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Professional Memberships -->
+  <div class="timeline-item">
+    <div class="timeline-dot" style="background: var(--accent-orange, #f97316); box-shadow: 0 0 10px var(--accent-orange, #f97316);"></div>
+    <div class="timeline-content">
+
+      <div class="card-summary">
+        <div class="timeline-header-container">
+          <h2 class="timeline-title">Professional Memberships</h2>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; margin-top: 1rem;">
+
+        <!-- IESL -->
+        <div style="display: flex; align-items: flex-start; gap: 1rem; flex: 1; min-width: 220px;">
+          <div style="width: 44px; height: 44px; background: var(--bg-secondary, #2a2a2a); border: 1px solid var(--border-color, #444); border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent-color, #1e429f)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <div>
+            <p style="margin: 0; font-weight: 600; color: var(--text-color, #fff);">Institution of Engineers Sri Lanka</p>
+            <p style="margin: 0.2rem 0 0; font-size: 0.9rem; color: #a0a0a0;">Student Member · IESL</p>
+          </div>
+        </div>
+
+        <!-- IMechE -->
+        <div style="display: flex; align-items: flex-start; gap: 1rem; flex: 1; min-width: 220px;">
+          <div style="width: 44px; height: 44px; background: var(--bg-secondary, #2a2a2a); border: 1px solid var(--border-color, #444); border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent-orange, #f97316)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+          </div>
+          <div>
+            <p style="margin: 0; font-weight: 600; color: var(--text-color, #fff);">Institution of Mechanical Engineers</p>
+            <p style="margin: 0.2rem 0 0; font-size: 0.9rem; color: #a0a0a0;">Student Member · IMechE</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
 </div>
