@@ -296,7 +296,7 @@ title: Professional & Leadership Experience
         </div>
 
         <div class="timeline-company-container">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-color, #1e429f)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          <img src="{{ '/assets/images/experience/sliit-iesl-yms-logo.jpg' | relative_url }}" alt="SLIIT IESL YMS Logo" class="company-logo" style="width: 48px; height: 36px; object-fit: contain; background: #fff; border-radius: 4px; padding: 3px;">
           <h3 class="timeline-company">IESL Student Chapter – SLIIT</h3>
         </div>
       </div>
@@ -334,8 +334,8 @@ title: Professional & Leadership Experience
 
         <!-- IESL -->
         <div style="display: flex; align-items: flex-start; gap: 1rem; flex: 1; min-width: 220px;">
-          <div style="width: 44px; height: 44px; background: var(--bg-secondary, #2a2a2a); border: 1px solid var(--border-color, #444); border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent-color, #1e429f)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          <div style="width: 52px; height: 52px; background: #fff; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; overflow: hidden;">
+            <img src="{{ '/assets/images/experience/iesl-logo.png' | relative_url }}" alt="IESL Logo" style="width: 100%; height: 100%; object-fit: contain;">
           </div>
           <div>
             <p style="margin: 0; font-weight: 600; color: var(--text-color, #fff);">Institution of Engineers Sri Lanka</p>
@@ -345,8 +345,8 @@ title: Professional & Leadership Experience
 
         <!-- IMechE -->
         <div style="display: flex; align-items: flex-start; gap: 1rem; flex: 1; min-width: 220px;">
-          <div style="width: 44px; height: 44px; background: var(--bg-secondary, #2a2a2a); border: 1px solid var(--border-color, #444); border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent-orange, #f97316)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+          <div style="width: 52px; height: 52px; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; overflow: hidden;">
+            <img src="{{ '/assets/images/experience/imeche-sliit-logo.png' | relative_url }}" alt="IMechE SLIIT Logo" style="width: 100%; height: 100%; object-fit: contain; border-radius: 8px;">
           </div>
           <div>
             <p style="margin: 0; font-weight: 600; color: var(--text-color, #fff);">Institution of Mechanical Engineers</p>

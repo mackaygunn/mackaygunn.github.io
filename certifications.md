@@ -96,8 +96,8 @@ title: Certifications & Memberships
 
   <!-- IESL -->
   <div class="membership-card">
-    <div class="membership-logo">
-      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#8bb4f7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+    <div class="membership-logo" style="background: #fff;">
+      <img src="{{ '/assets/images/experience/iesl-logo.png' | relative_url }}" alt="IESL Logo" style="width: 100%; height: 100%; object-fit: contain;">
     </div>
     <div class="membership-info">
       <h3>Institution of Engineers Sri Lanka</h3>
@@ -108,8 +108,8 @@ title: Certifications & Memberships
 
   <!-- IMechE -->
   <div class="membership-card">
-    <div class="membership-logo">
-      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fb923c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+    <div class="membership-logo" style="background: #000; overflow: hidden;">
+      <img src="{{ '/assets/images/experience/imeche-sliit-logo.png' | relative_url }}" alt="IMechE SLIIT Logo" style="width: 100%; height: 100%; object-fit: contain;">
     </div>
     <div class="membership-info">
       <h3>Institution of Mechanical Engineers</h3>
