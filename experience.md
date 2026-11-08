@@ -319,43 +319,4 @@ title: Professional & Leadership Experience
     </div>
   </div>
 
-  <!-- Professional Memberships -->
-  <div class="timeline-item">
-    <div class="timeline-dot" style="background: var(--accent-orange, #f97316); box-shadow: 0 0 10px var(--accent-orange, #f97316);"></div>
-    <div class="timeline-content">
-
-      <div class="card-summary">
-        <div class="timeline-header-container">
-          <h2 class="timeline-title">Professional Memberships</h2>
-        </div>
-      </div>
-
-      <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; margin-top: 1rem;">
-
-        <!-- IESL -->
-        <div style="display: flex; align-items: flex-start; gap: 1rem; flex: 1; min-width: 220px;">
-          <div style="width: 52px; height: 52px; background: #fff; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; overflow: hidden;">
-            <img src="{{ '/assets/images/experience/iesl-logo.png' | relative_url }}" alt="IESL Logo" style="width: 100%; height: 100%; object-fit: contain;">
-          </div>
-          <div>
-            <p style="margin: 0; font-weight: 600; color: var(--text-color, #fff);">Institution of Engineers Sri Lanka</p>
-            <p style="margin: 0.2rem 0 0; font-size: 0.9rem; color: #a0a0a0;">Student Member · IESL</p>
-          </div>
-        </div>
-
-        <!-- IMechE -->
-        <div style="display: flex; align-items: flex-start; gap: 1rem; flex: 1; min-width: 220px;">
-          <div style="width: 52px; height: 52px; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; overflow: hidden;">
-            <img src="{{ '/assets/images/experience/imeche-sliit-logo.png' | relative_url }}" alt="IMechE SLIIT Logo" style="width: 100%; height: 100%; object-fit: contain; border-radius: 8px;">
-          </div>
-          <div>
-            <p style="margin: 0; font-weight: 600; color: var(--text-color, #fff);">Institution of Mechanical Engineers</p>
-            <p style="margin: 0.2rem 0 0; font-size: 0.9rem; color: #a0a0a0;">Student Member · IMechE</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
 </div>
